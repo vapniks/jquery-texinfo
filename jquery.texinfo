@@ -1,0 +1,3476 @@
+\input texinfo
+@documentencoding UTF-8
+
+@dircategory Programming
+@direntry
+* jQuery: (jquery)Top.
+@end direntry
+
+@ifnottex
+@paragraphindent 0
+@end ifnottex
+@titlepage
+@title jQuery API Documentation
+@author JS Foundation - js.foundation
+@end titlepage
+
+@node Top
+@top jQuery API Documentation
+
+@itemize
+@item
+@uref{https://jquery.com/,jQuery}
+@item
+@uref{https://jqueryui.com/,jQuery UI}
+@item
+@uref{https://jquerymobile.com/,jQuery Mobile}
+@item
+@uref{https://sizzlejs.com/,Sizzle}
+@item
+@uref{https://qunitjs.com/,QUnit}
+@end itemize
+
+@itemize
+@item
+@uref{https://plugins.jquery.com/,Plugins}
+@item
+@uref{https://contribute.jquery.org/,Contribute}
+@itemize
+@item
+@uref{https://js.foundation/CLA,CLA}
+@item
+@uref{https://contribute.jquery.org/style-guide/,Style Guides}
+@item
+@uref{https://contribute.jquery.org/triage/,Bug Triage}
+@item
+@uref{https://contribute.jquery.org/code/,Code}
+@item
+@uref{https://contribute.jquery.org/documentation/,Documentation}
+@item
+@uref{https://contribute.jquery.org/web-sites/,Web Sites}
+@end itemize
+
+@item
+@uref{https://js.foundation/events,Events}
+@itemize
+@end itemize
+
+@item
+@uref{https://jquery.org/support/,Support}
+@itemize
+@item
+@uref{https://learn.jquery.com/,Learning Center}
+@item
+@uref{https://irc.jquery.org/,IRC/Chat}
+@item
+@uref{https://forum.jquery.com/,Forums}
+@item
+@uref{https://stackoverflow.com/tags/jquery/info,Stack Overflow}
+@item
+@uref{https://jquery.org/support/,Commercial Support}
+@end itemize
+
+@item
+@uref{https://js.foundation/,JS Foundation}
+@itemize
+@item
+@uref{https://js.foundation/about/join,Join}
+@item
+@uref{https://js.foundation/about/members,Members}
+@item
+@uref{https://js.foundation/about/leadership,Leadership}
+@item
+@uref{https://js.foundation/community/code-of-conduct,Conduct}
+@item
+@uref{https://js.foundation/about/donate,Donate}
+@end itemize
+
+@end itemize
+
+@node jQuery API Documentation
+@chapter @uref{https://jquery.com/,jQuery API Documentation}
+@anchor{#jquery-api-documentation}
+@uref{https://js.foundation/about/donate,@image{./jQuery API Documentation_files/donate,4.16667in,1.04167in,Support
+the JS Foundation,png}}
+@itemize
+@item
+@uref{https://jquery.com/download/,Download}
+@item
+@uref{https://api.jquery.com/,API Documentation}
+@item
+@uref{https://blog.jquery.com/,Blog}
+@item
+@uref{https://plugins.jquery.com/,Plugins}
+@item
+@uref{https://jquery.com/browser-support/,Browser Support}
+@end itemize
+
+Navigate...DownloadAPI DocumentationBlogPluginsBrowser Support
+search
+Search jQuery API Documentation
+
+@verbatim
+@end verbatim
+
+@node jQuery API
+@chapter jQuery API
+@anchor{#jquery-api}
+jQuery is a fast, small, and feature-rich JavaScript library. It makes
+things like HTML document traversal and manipulation, event handling,
+animation, and Ajax much simpler with an easy-to-use API that works
+across a multitude of browsers. If you're new to jQuery, we recommend
+that you check out the @uref{https://learn.jquery.com/,jQuery Learning
+Center}.
+
+If you're updating to a newer version of jQuery, be sure to read the
+release notes published on @uref{https://blog.jquery.com/,our blog}. If
+you're coming from a version prior 1.9, you should check out the
+@uref{https://jquery.com/upgrade-guide/1.9/,1.9 Upgrade Guide} as well.
+
+Note that this is the API documentation for jQuery core. Other projects
+have API docs in other locations:
+
+@itemize
+@item
+@uref{https://api.jqueryui.com/,jQuery UI API docs}
+@item
+@uref{https://api.jquerymobile.com/,jQuery Mobile API docs}
+@item
+@uref{https://api.qunitjs.com/,QUnit API docs}
+@end itemize
+
+@iftex
+@bigskip@hrule@bigskip
+@end iftex
+@ifnottex
+------------------------------------------------------------------------
+@end ifnottex
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/miscellaneous-traversal/,Miscellaneous
+Traversing}
+
+@node add
+@chapter @uref{https://api.jquery.com/add/,.add()}
+@anchor{#add}
+@findex add
+Create a new jQuery object with elements added to the set of matched
+elements.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/miscellaneous-traversal/,Miscellaneous
+Traversing}
+
+@node addBack
+@chapter @uref{https://api.jquery.com/addBack/,.addBack()}
+@anchor{#addback}
+@findex addBack
+Add the previous set of elements on the stack to the current set,
+optionally filtered by a selector.
+@uref{https://api.jquery.com/category/attributes/,Attributes} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/class-attribute/,Class
+Attribute} | @uref{https://api.jquery.com/category/css/,CSS}
+
+@node addClass
+@chapter @uref{https://api.jquery.com/addClass/,.addClass()}
+@anchor{#addclass}
+@findex addClass
+Adds the specified class(es) to each element in the set of matched
+elements.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-outside/,DOM
+Insertion, Outside}
+
+@node after
+@chapter @uref{https://api.jquery.com/after/,.after()}
+@anchor{#after}
+@findex after
+Insert content, specified by the parameter, after each element in the
+set of matched elements.
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/global-ajax-event-handlers/,Global
+Ajax Event Handlers}
+
+@node ajaxComplete
+@chapter @uref{https://api.jquery.com/ajaxComplete/,.ajaxComplete()}
+@anchor{#ajaxcomplete}
+@findex ajaxComplete
+Register a handler to be called when Ajax requests complete. This is an
+AjaxEvent.
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/global-ajax-event-handlers/,Global
+Ajax Event Handlers}
+
+@node ajaxError
+@chapter @uref{https://api.jquery.com/ajaxError/,.ajaxError()}
+@anchor{#ajaxerror}
+@findex ajaxError
+Register a handler to be called when Ajax requests complete with an
+error. This is an Ajax Event.
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/global-ajax-event-handlers/,Global
+Ajax Event Handlers}
+
+@node ajaxSend
+@chapter @uref{https://api.jquery.com/ajaxSend/,.ajaxSend()}
+@anchor{#ajaxsend}
+@findex ajaxSend
+Attach a function to be executed before an Ajax request is sent. This is
+an Ajax Event.
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/global-ajax-event-handlers/,Global
+Ajax Event Handlers}
+
+@node ajaxStart
+@chapter @uref{https://api.jquery.com/ajaxStart/,.ajaxStart()}
+@anchor{#ajaxstart}
+@findex ajaxStart
+Register a handler to be called when the first Ajax request begins. This
+is an Ajax Event.
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/global-ajax-event-handlers/,Global
+Ajax Event Handlers}
+
+@node ajaxStop
+@chapter @uref{https://api.jquery.com/ajaxStop/,.ajaxStop()}
+@anchor{#ajaxstop}
+@findex ajaxStop
+Register a handler to be called when all Ajax requests have completed.
+This is an Ajax Event.
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/global-ajax-event-handlers/,Global
+Ajax Event Handlers}
+
+@node ajaxSuccess
+@chapter @uref{https://api.jquery.com/ajaxSuccess/,.ajaxSuccess()}
+@anchor{#ajaxsuccess}
+@findex ajaxSuccess
+Attach a function to be executed whenever an Ajax request completes
+successfully. This is an Ajax Event.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-css-selectors/,Basic}
+
+@node All Selector “*”
+@chapter @uref{https://api.jquery.com/all-selector/,All Selector (“*”)}
+@anchor{#all-selector}
+Selects all elements.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.8/,Deprecated
+1.8} | @uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/miscellaneous-traversal/,Miscellaneous
+Traversing} | @uref{https://api.jquery.com/category/removed/,Removed}
+
+@node andSelf
+@chapter @uref{https://api.jquery.com/andSelf/,.andSelf()}
+@anchor{#andself}
+@findex andSelf
+Add the previous set of elements on the stack to the current set.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/custom-effects/,Custom}
+
+@node animate
+@chapter @uref{https://api.jquery.com/animate/,.animate()}
+@anchor{#animate}
+@findex animate
+Perform a custom animation of a set of CSS properties.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-filter-selectors/,Basic
+Filter} | @uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node animated Selector
+@chapter @uref{https://api.jquery.com/animated-selector/,:animated Selector}
+@anchor{#animated-selector}
+@findex animated Selector
+Select all elements that are in the progress of an animation at the time
+the selector is run.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-inside/,DOM
+Insertion, Inside}
+
+@node append
+@chapter @uref{https://api.jquery.com/append/,.append()}
+@anchor{#append}
+@findex append
+Insert content, specified by the parameter, to the end of each element
+in the set of matched elements.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-inside/,DOM
+Insertion, Inside}
+
+@node appendTo
+@chapter @uref{https://api.jquery.com/appendTo/,.appendTo()}
+@anchor{#appendto}
+@findex appendTo
+Insert every element in the set of matched elements to the end of the
+target.
+@uref{https://api.jquery.com/category/attributes/,Attributes} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/general-attributes/,General
+Attributes}
+
+@node attr
+@chapter @uref{https://api.jquery.com/attr/,.attr()}
+@anchor{#attr}
+@findex attr
+Get the value of an attribute for the first element in the set of
+matched elements or set one or more attributes for every matched
+element.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/attribute-selectors/,Attribute}
+
+@node Attribute Contains Prefix Selector [name|=”value”]
+@chapter @uref{https://api.jquery.com/attribute-contains-prefix-selector/,Attribute Contains Prefix Selector [name|=”value”]}
+@anchor{#attribute-contains-prefix-selector-namevalue}
+Selects elements that have the specified attribute with a value either
+equal to a given string or starting with that string followed by a
+hyphen (-).
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/attribute-selectors/,Attribute}
+
+@node Attribute Contains Selector [name*=”value”]
+@chapter @uref{https://api.jquery.com/attribute-contains-selector/,Attribute Contains Selector [name*=”value”]}
+@anchor{#attribute-contains-selector-namevalue}
+Selects elements that have the specified attribute with a value
+containing a given substring.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/attribute-selectors/,Attribute}
+
+@node Attribute Contains Word Selector [name~=”value”]
+@chapter @uref{https://api.jquery.com/attribute-contains-word-selector/,Attribute Contains Word Selector [name~=”value”]}
+@anchor{#attribute-contains-word-selector-namevalue}
+Selects elements that have the specified attribute with a value
+containing a given word, delimited by spaces.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/attribute-selectors/,Attribute}
+
+@node Attribute Ends With Selector [name$=”value”]
+@chapter @uref{https://api.jquery.com/attribute-ends-with-selector/,Attribute Ends With Selector [name$=”value”]}
+@anchor{#attribute-ends-with-selector-namevalue}
+Selects elements that have the specified attribute with a value ending
+exactly with a given string. The comparison is case sensitive.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/attribute-selectors/,Attribute}
+
+@node Attribute Equals Selector [name=”value”]
+@chapter @uref{https://api.jquery.com/attribute-equals-selector/,Attribute Equals Selector [name=”value”]}
+@anchor{#attribute-equals-selector-namevalue}
+Selects elements that have the specified attribute with a value exactly
+equal to a certain value.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/attribute-selectors/,Attribute}
+| @uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node Attribute Not Equal Selector [name!=”value”]
+@chapter @uref{https://api.jquery.com/attribute-not-equal-selector/,Attribute Not Equal Selector [name!=”value”]}
+@anchor{#attribute-not-equal-selector-namevalue}
+Select elements that either don't have the specified attribute, or do
+have the specified attribute but not with a certain value.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/attribute-selectors/,Attribute}
+
+@node Attribute Starts With Selector [name^=”value”]
+@chapter @uref{https://api.jquery.com/attribute-starts-with-selector/,Attribute Starts With Selector [name^=”value”]}
+@anchor{#attribute-starts-with-selector-namevalue}
+Selects elements that have the specified attribute with a value
+beginning exactly with a given string.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-outside/,DOM
+Insertion, Outside}
+
+@node before
+@chapter @uref{https://api.jquery.com/before/,.before()}
+@anchor{#before}
+@findex before
+Insert content, specified by the parameter, before each element in the
+set of matched elements.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-3.0/,Deprecated
+3.0} | @uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-handler-attachment/,Event
+Handler Attachment}
+
+@node bind
+@chapter @uref{https://api.jquery.com/bind/,.bind()}
+@anchor{#bind}
+@findex bind
+Attach a handler to an event for the elements.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/form-events/,Form Events} |
+@uref{https://api.jquery.com/category/forms/,Forms}
+
+@node blur
+@chapter @uref{https://api.jquery.com/blur/,.blur()}
+@anchor{#blur}
+@findex blur
+Bind an event handler to the “blur” JavaScript event, or trigger that
+event on an element.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form} |
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node button Selector
+@chapter @uref{https://api.jquery.com/button-selector/,:button Selector}
+@anchor{#button-selector}
+@findex button Selector
+Selects all button elements and elements of type button.
+@uref{https://api.jquery.com/category/callbacks-object/,Callbacks
+Object}
+
+@node callbacksadd
+@chapter @uref{https://api.jquery.com/callbacks.add/,callbacks.add()}
+@anchor{#callbacks.add}
+@findex callbacksadd
+Add a callback or a collection of callbacks to a callback list.
+@uref{https://api.jquery.com/category/callbacks-object/,Callbacks
+Object}
+
+@node callbacksdisable
+@chapter @uref{https://api.jquery.com/callbacks.disable/,callbacks.disable()}
+@anchor{#callbacks.disable}
+@findex callbacksdisable
+Disable a callback list from doing anything more.
+@uref{https://api.jquery.com/category/callbacks-object/,Callbacks
+Object}
+
+@node callbacksdisabled
+@chapter @uref{https://api.jquery.com/callbacks.disabled/,callbacks.disabled()}
+@anchor{#callbacks.disabled}
+@findex callbacksdisabled
+Determine if the callbacks list has been disabled.
+@uref{https://api.jquery.com/category/callbacks-object/,Callbacks
+Object}
+
+@node callbacksempty
+@chapter @uref{https://api.jquery.com/callbacks.empty/,callbacks.empty()}
+@anchor{#callbacks.empty}
+@findex callbacksempty
+Remove all of the callbacks from a list.
+@uref{https://api.jquery.com/category/callbacks-object/,Callbacks
+Object}
+
+@node callbacksfire
+@chapter @uref{https://api.jquery.com/callbacks.fire/,callbacks.fire()}
+@anchor{#callbacks.fire}
+@findex callbacksfire
+Call all of the callbacks with the given arguments.
+@uref{https://api.jquery.com/category/callbacks-object/,Callbacks
+Object}
+
+@node callbacksfired
+@chapter @uref{https://api.jquery.com/callbacks.fired/,callbacks.fired()}
+@anchor{#callbacks.fired}
+@findex callbacksfired
+Determine if the callbacks have already been called at least once.
+@uref{https://api.jquery.com/category/callbacks-object/,Callbacks
+Object}
+
+@node callbacksfireWith
+@chapter @uref{https://api.jquery.com/callbacks.fireWith/,callbacks.fireWith()}
+@anchor{#callbacks.firewith}
+@findex callbacksfireWith
+Call all callbacks in a list with the given context and arguments.
+@uref{https://api.jquery.com/category/callbacks-object/,Callbacks
+Object}
+
+@node callbackshas
+@chapter @uref{https://api.jquery.com/callbacks.has/,callbacks.has()}
+@anchor{#callbacks.has}
+@findex callbackshas
+Determine whether or not the list has any callbacks attached. If a
+callback is provided as an argument, determine whether it is in a list.
+@uref{https://api.jquery.com/category/callbacks-object/,Callbacks
+Object}
+
+@node callbackslock
+@chapter @uref{https://api.jquery.com/callbacks.lock/,callbacks.lock()}
+@anchor{#callbacks.lock}
+@findex callbackslock
+Lock a callback list in its current state.
+@uref{https://api.jquery.com/category/callbacks-object/,Callbacks
+Object}
+
+@node callbackslocked
+@chapter @uref{https://api.jquery.com/callbacks.locked/,callbacks.locked()}
+@anchor{#callbacks.locked}
+@findex callbackslocked
+Determine if the callbacks list has been locked.
+@uref{https://api.jquery.com/category/callbacks-object/,Callbacks
+Object}
+
+@node callbacksremove
+@chapter @uref{https://api.jquery.com/callbacks.remove/,callbacks.remove()}
+@anchor{#callbacks.remove}
+@findex callbacksremove
+Remove a callback or a collection of callbacks from a callback list.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/form-events/,Form Events} |
+@uref{https://api.jquery.com/category/forms/,Forms}
+
+@node change
+@chapter @uref{https://api.jquery.com/change/,.change()}
+@anchor{#change}
+@findex change
+Bind an event handler to the “change” JavaScript event, or trigger that
+event on an element.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form} |
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node checkbox Selector
+@chapter @uref{https://api.jquery.com/checkbox-selector/,:checkbox Selector}
+@anchor{#checkbox-selector}
+@findex checkbox Selector
+Selects all elements of type checkbox.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form}
+
+@node checked Selector
+@chapter @uref{https://api.jquery.com/checked-selector/,:checked Selector}
+@anchor{#checked-selector}
+@findex checked Selector
+Matches all elements that are checked or selected.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/hierarchy-selectors/,Hierarchy}
+
+@node Child Selector “parent > child”
+@chapter @uref{https://api.jquery.com/child-selector/,Child Selector (“parent > child”)}
+@anchor{#child-selector-parent-child}
+Selects all direct child elements specified by “child” of elements
+specified by “parent”.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/tree-traversal/,Tree
+Traversal}
+
+@node children
+@chapter @uref{https://api.jquery.com/children/,.children()}
+@anchor{#children}
+@findex children
+Get the children of each element in the set of matched elements,
+optionally filtered by a selector.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-css-selectors/,Basic}
+
+@node Class Selector “class”
+@chapter @uref{https://api.jquery.com/class-selector/,Class Selector (“.class”)}
+@anchor{#class-selector-.class}
+Selects all elements with the given class.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/custom-effects/,Custom} |
+@uref{https://api.jquery.com/category/data/,Data} |
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node clearQueue
+@chapter @uref{https://api.jquery.com/clearQueue/,.clearQueue()}
+@anchor{#clearqueue}
+@findex clearQueue
+Remove from the queue all items that have not yet been run.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/mouse-events/,Mouse Events}
+
+@node click
+@chapter @uref{https://api.jquery.com/click/,.click()}
+@anchor{#click}
+@findex click
+Bind an event handler to the “click” JavaScript event, or trigger that
+event on an element.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/copying/,Copying}
+
+@node clone
+@chapter @uref{https://api.jquery.com/clone/,.clone()}
+@anchor{#clone}
+@findex clone
+Create a deep copy of the set of matched elements.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/tree-traversal/,Tree
+Traversal}
+
+@node closest
+@chapter @uref{https://api.jquery.com/closest/,.closest()}
+@anchor{#closest}
+@findex closest
+For each element in the set, get the first element that matches the
+selector by testing the element itself and traversing up through its
+ancestors in the DOM tree.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/content-filter-selector/,Content
+Filter}
+
+@node contains Selector
+@chapter @uref{https://api.jquery.com/contains-selector/,:contains() Selector}
+@anchor{#contains-selector}
+@findex contains Selector
+Select all elements that contain the specified text.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/miscellaneous-traversal/,Miscellaneous
+Traversing}
+
+@node contents
+@chapter @uref{https://api.jquery.com/contents/,.contents()}
+@anchor{#contents}
+@findex contents
+Get the children of each element in the set of matched elements,
+including text and comment nodes.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.10/,Deprecated
+1.10} | @uref{https://api.jquery.com/category/internals/,Internals} |
+@uref{https://api.jquery.com/category/properties/,Properties} >
+@uref{https://api.jquery.com/category/properties/jquery-object-instance-properties/,Properties
+of jQuery Object Instances} |
+@uref{https://api.jquery.com/category/removed/,Removed}
+
+@node context
+@chapter @uref{https://api.jquery.com/context/,.context}
+@anchor{#context}
+@findex context
+The DOM node context originally passed to jQuery(); if none was passed
+then context will likely be the document.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/mouse-events/,Mouse Events}
+
+@node contextmenu
+@chapter @uref{https://api.jquery.com/contextmenu/,.contextmenu()}
+@anchor{#contextmenu}
+@findex contextmenu
+Bind an event handler to the “contextmenu” JavaScript event, or trigger
+that event on an element.
+@uref{https://api.jquery.com/category/css/,CSS} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/style-properties/,Style
+Properties}
+
+@node css
+@chapter @uref{https://api.jquery.com/css/,.css()}
+@anchor{#css}
+@findex css
+Get the value of a computed style property for the first element in the
+set of matched elements or set one or more CSS properties for every
+matched element.
+@uref{https://api.jquery.com/category/data/,Data} |
+@uref{https://api.jquery.com/category/miscellaneous/,Miscellaneous} >
+@uref{https://api.jquery.com/category/miscellaneous/data-storage/,Data
+Storage}
+
+@node data
+@chapter @uref{https://api.jquery.com/data/,.data()}
+@anchor{#data}
+@findex data
+Store arbitrary data associated with the matched elements or return the
+value at the named data store for the first element in the set of
+matched elements.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/mouse-events/,Mouse Events}
+
+@node dblclick
+@chapter @uref{https://api.jquery.com/dblclick/,.dblclick()}
+@anchor{#dblclick}
+@findex dblclick
+Bind an event handler to the “dblclick” JavaScript event, or trigger
+that event on an element.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node deferredalways
+@chapter @uref{https://api.jquery.com/deferred.always/,deferred.always()}
+@anchor{#deferred.always}
+@findex deferredalways
+Add handlers to be called when the Deferred object is either resolved or
+rejected.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node deferredcatch
+@chapter @uref{https://api.jquery.com/deferred.catch/,deferred.catch()}
+@anchor{#deferred.catch}
+@findex deferredcatch
+Add handlers to be called when the Deferred object is rejected.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node deferreddone
+@chapter @uref{https://api.jquery.com/deferred.done/,deferred.done()}
+@anchor{#deferred.done}
+@findex deferreddone
+Add handlers to be called when the Deferred object is resolved.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node deferredfail
+@chapter @uref{https://api.jquery.com/deferred.fail/,deferred.fail()}
+@anchor{#deferred.fail}
+@findex deferredfail
+Add handlers to be called when the Deferred object is rejected.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+| @uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.7/,Deprecated
+1.7} | @uref{https://api.jquery.com/category/removed/,Removed}
+
+@node deferredisRejected
+@chapter @uref{https://api.jquery.com/deferred.isRejected/,deferred.isRejected()}
+@anchor{#deferred.isrejected}
+@findex deferredisRejected
+Determine whether a Deferred object has been rejected.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+| @uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.7/,Deprecated
+1.7} | @uref{https://api.jquery.com/category/removed/,Removed}
+
+@node deferredisResolved
+@chapter @uref{https://api.jquery.com/deferred.isResolved/,deferred.isResolved()}
+@anchor{#deferred.isresolved}
+@findex deferredisResolved
+Determine whether a Deferred object has been resolved.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node deferrednotify
+@chapter @uref{https://api.jquery.com/deferred.notify/,deferred.notify()}
+@anchor{#deferred.notify}
+@findex deferrednotify
+Call the progressCallbacks on a Deferred object with the given args.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node deferrednotifyWith
+@chapter @uref{https://api.jquery.com/deferred.notifyWith/,deferred.notifyWith()}
+@anchor{#deferred.notifywith}
+@findex deferrednotifyWith
+Call the progressCallbacks on a Deferred object with the given context
+and args.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+| @uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.8/,Deprecated
+1.8}
+
+@node deferredpipe
+@chapter @uref{https://api.jquery.com/deferred.pipe/,deferred.pipe()}
+@anchor{#deferred.pipe}
+@findex deferredpipe
+Utility method to filter and/or chain Deferreds.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node deferredprogress
+@chapter @uref{https://api.jquery.com/deferred.progress/,deferred.progress()}
+@anchor{#deferred.progress}
+@findex deferredprogress
+Add handlers to be called when the Deferred object generates progress
+notifications.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node deferredpromise
+@chapter @uref{https://api.jquery.com/deferred.promise/,deferred.promise()}
+@anchor{#deferred.promise}
+@findex deferredpromise
+Return a Deferred's Promise object.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node deferredreject
+@chapter @uref{https://api.jquery.com/deferred.reject/,deferred.reject()}
+@anchor{#deferred.reject}
+@findex deferredreject
+Reject a Deferred object and call any failCallbacks with the given args.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node deferredrejectWith
+@chapter @uref{https://api.jquery.com/deferred.rejectWith/,deferred.rejectWith()}
+@anchor{#deferred.rejectwith}
+@findex deferredrejectWith
+Reject a Deferred object and call any failCallbacks with the given
+context and args.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node deferredresolve
+@chapter @uref{https://api.jquery.com/deferred.resolve/,deferred.resolve()}
+@anchor{#deferred.resolve}
+@findex deferredresolve
+Resolve a Deferred object and call any doneCallbacks with the given
+args.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node deferredresolveWith
+@chapter @uref{https://api.jquery.com/deferred.resolveWith/,deferred.resolveWith()}
+@anchor{#deferred.resolvewith}
+@findex deferredresolveWith
+Resolve a Deferred object and call any doneCallbacks with the given
+context and args.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node deferredstate
+@chapter @uref{https://api.jquery.com/deferred.state/,deferred.state()}
+@anchor{#deferred.state}
+@findex deferredstate
+Determine the current state of a Deferred object.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node deferredthen
+@chapter @uref{https://api.jquery.com/deferred.then/,deferred.then()}
+@anchor{#deferred.then}
+@findex deferredthen
+Add handlers to be called when the Deferred object is resolved,
+rejected, or still in progress.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/custom-effects/,Custom}
+
+@node delay
+@chapter @uref{https://api.jquery.com/delay/,.delay()}
+@anchor{#delay}
+@findex delay
+Set a timer to delay execution of subsequent items in the queue.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-3.0/,Deprecated
+3.0} | @uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-handler-attachment/,Event
+Handler Attachment}
+
+@node delegate
+@chapter @uref{https://api.jquery.com/delegate/,.delegate()}
+@anchor{#delegate}
+@findex delegate
+Attach a handler to one or more events for all elements that match the
+selector, now or in the future, based on a specific set of root
+elements.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/custom-effects/,Custom} |
+@uref{https://api.jquery.com/category/data/,Data} |
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node dequeue
+@chapter @uref{https://api.jquery.com/dequeue/,.dequeue()}
+@anchor{#dequeue}
+@findex dequeue
+Execute the next function on the queue for the matched elements.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/hierarchy-selectors/,Hierarchy}
+
+@node Descendant Selector “ancestor descendant”
+@chapter @uref{https://api.jquery.com/descendant-selector/,Descendant Selector (“ancestor descendant”)}
+@anchor{#descendant-selector-ancestor-descendant}
+@findex Descendant Selector
+Selects all elements that are descendants of a given ancestor.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-removal/,DOM
+Removal}
+
+@node detach
+@chapter @uref{https://api.jquery.com/detach/,.detach()}
+@anchor{#detach}
+@findex detach
+Remove the set of matched elements from the DOM.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.7/,Deprecated
+1.7} | @uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-handler-attachment/,Event
+Handler Attachment} |
+@uref{https://api.jquery.com/category/removed/,Removed}
+
+@node die
+@chapter @uref{https://api.jquery.com/die/,.die()}
+@anchor{#die}
+@findex die
+Remove event handlers previously attached using .live() from the
+elements.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form}
+
+@node disabled Selector
+@chapter @uref{https://api.jquery.com/disabled-selector/,:disabled Selector}
+@anchor{#disabled-selector}
+@findex disabled Selector
+Selects all elements that are disabled.
+@uref{https://api.jquery.com/category/miscellaneous/,Miscellaneous} >
+@uref{https://api.jquery.com/category/miscellaneous/collection-manipulation/,Collection
+Manipulation} |
+@uref{https://api.jquery.com/category/traversing/,Traversing}
+
+@node each
+@chapter @uref{https://api.jquery.com/each/,.each()}
+@anchor{#each}
+@findex each
+Iterate over a jQuery object, executing a function for each matched
+element.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-css-selectors/,Basic}
+
+@node Element Selector “element”
+@chapter @uref{https://api.jquery.com/element-selector/,Element Selector (“element”)}
+@anchor{#element-selector-element}
+@findex Element Selector “element”
+Selects all elements with the given tag name.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-removal/,DOM
+Removal}
+
+@node empty
+@chapter @uref{https://api.jquery.com/empty/,.empty()}
+@anchor{#empty}
+@findex empty
+Remove all child nodes of the set of matched elements from the DOM.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/content-filter-selector/,Content
+Filter}
+
+@node empty Selector
+@chapter @uref{https://api.jquery.com/empty-selector/,:empty Selector}
+@anchor{#empty-selector}
+@findex empty Selector
+Select all elements that have no children (including text nodes).
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form}
+
+@node enabled Selector
+@chapter @uref{https://api.jquery.com/enabled-selector/,:enabled Selector}
+@anchor{#enabled-selector}
+@findex enabled Selector
+Selects all elements that are enabled.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/miscellaneous-traversal/,Miscellaneous
+Traversing}
+
+@node end
+@chapter @uref{https://api.jquery.com/end/,.end()}
+@anchor{#end}
+@findex end
+End the most recent filtering operation in the current chain and return
+the set of matched elements to its previous state.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/filtering/,Filtering}
+
+@node eq
+@chapter @uref{https://api.jquery.com/eq/,.eq()}
+@anchor{#eq}
+@findex eq
+Reduce the set of matched elements to the one at the specified index.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-filter-selectors/,Basic
+Filter} | @uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node eq Selector
+@chapter @uref{https://api.jquery.com/eq-selector/,:eq() Selector}
+@anchor{#eq-selector}
+@findex eq Selector
+Select the element at index n within the matched set.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/browser-events/,Browser
+Events} | @uref{https://api.jquery.com/category/deprecated/,Deprecated}
+>
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.8/,Deprecated
+1.8} | @uref{https://api.jquery.com/category/removed/,Removed}
+
+@node error
+@chapter @uref{https://api.jquery.com/error/,.error()}
+@anchor{#error}
+@findex error
+Bind an event handler to the “error” JavaScript event.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-filter-selectors/,Basic
+Filter} | @uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node even Selector
+@chapter @uref{https://api.jquery.com/even-selector/,:even Selector}
+@anchor{#even-selector}
+@findex even Selector
+Selects even elements, zero-indexed. See also odd.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventcurrentTarget
+@chapter @uref{https://api.jquery.com/event.currentTarget/,event.currentTarget}
+@anchor{#event.currenttarget}
+@findex eventcurrentTarget
+The current DOM element within the event bubbling phase.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventdata
+@chapter @uref{https://api.jquery.com/event.data/,event.data}
+@anchor{#event.data}
+@findex eventdata
+An optional object of data passed to an event method when the current
+executing handler is bound.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+| @uref{https://api.jquery.com/category/events/,Events}
+
+@node eventdelegateTarget
+@chapter @uref{https://api.jquery.com/event.delegateTarget/,event.delegateTarget}
+@anchor{#event.delegatetarget}
+@findex eventdelegateTarget
+The element where the currently-called jQuery event handler was
+attached.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventisDefaultPrevented
+@chapter @uref{https://api.jquery.com/event.isDefaultPrevented/,event.isDefaultPrevented()}
+@anchor{#event.isdefaultprevented}
+@findex eventisDefaultPrevented
+Returns whether event.preventDefault() was ever called on this event
+object.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventisImmediatePropagationStopped
+@chapter @uref{https://api.jquery.com/event.isImmediatePropagationStopped/,event.isImmediatePropagationStopped()}
+@anchor{#event.isimmediatepropagationstopped}
+@findex eventisImmediatePropagationStopped
+Returns whether event.stopImmediatePropagation() was ever called on this
+event object.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventisPropagationStopped
+@chapter @uref{https://api.jquery.com/event.isPropagationStopped/,event.isPropagationStopped()}
+@anchor{#event.ispropagationstopped}
+@findex eventisPropagationStopped
+Returns whether event.stopPropagation() was ever called on this event
+object.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventmetaKey
+@chapter @uref{https://api.jquery.com/event.metaKey/,event.metaKey}
+@anchor{#event.metakey}
+@findex eventmetaKey
+Indicates whether the META key was pressed when the event fired.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventnamespace
+@chapter @uref{https://api.jquery.com/event.namespace/,event.namespace}
+@anchor{#event.namespace}
+@findex eventnamespace
+The namespace specified when the event was triggered.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventpageX
+@chapter @uref{https://api.jquery.com/event.pageX/,event.pageX}
+@anchor{#event.pagex}
+@findex eventpageX
+The mouse position relative to the left edge of the document.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventpageY
+@chapter @uref{https://api.jquery.com/event.pageY/,event.pageY}
+@anchor{#event.pagey}
+@findex eventpageY
+The mouse position relative to the top edge of the document.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventpreventDefault
+@chapter @uref{https://api.jquery.com/event.preventDefault/,event.preventDefault()}
+@anchor{#event.preventdefault}
+@findex eventpreventDefault
+If this method is called, the default action of the event will not be
+triggered.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventrelatedTarget
+@chapter @uref{https://api.jquery.com/event.relatedTarget/,event.relatedTarget}
+@anchor{#event.relatedtarget}
+@findex eventrelatedTarget
+The other DOM element involved in the event, if any.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventresult
+@chapter @uref{https://api.jquery.com/event.result/,event.result}
+@anchor{#event.result}
+@findex eventresult
+The last value returned by an event handler that was triggered by this
+event, unless the value was undefined.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventstopImmediatePropagation
+@chapter @uref{https://api.jquery.com/event.stopImmediatePropagation/,event.stopImmediatePropagation()}
+@anchor{#event.stopimmediatepropagation}
+@findex eventstopImmediatePropagation
+Keeps the rest of the handlers from being executed and prevents the
+event from bubbling up the DOM tree.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventstopPropagation
+@chapter @uref{https://api.jquery.com/event.stopPropagation/,event.stopPropagation()}
+@anchor{#event.stoppropagation}
+@findex eventstopPropagation
+Prevents the event from bubbling up the DOM tree, preventing any parent
+handlers from being notified of the event.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventtarget
+@chapter @uref{https://api.jquery.com/event.target/,event.target}
+@anchor{#event.target}
+@findex eventtarget
+The DOM element that initiated the event.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventtimeStamp
+@chapter @uref{https://api.jquery.com/event.timeStamp/,event.timeStamp}
+@anchor{#event.timestamp}
+@findex eventtimeStamp
+The difference in milliseconds between the time the browser created the
+event and January 1, 1970.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventtype
+@chapter @uref{https://api.jquery.com/event.type/,event.type}
+@anchor{#event.type}
+@findex eventtype
+Describes the nature of the event.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+
+@node eventwhich
+@chapter @uref{https://api.jquery.com/event.which/,event.which}
+@anchor{#event.which}
+@findex eventwhich
+For key or mouse events, this property indicates the specific key or
+button that was pressed.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/fading/,Fading}
+
+@node fadeIn
+@chapter @uref{https://api.jquery.com/fadeIn/,.fadeIn()}
+@anchor{#fadein}
+@findex fadeIn
+Display the matched elements by fading them to opaque.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/fading/,Fading}
+
+@node fadeOut
+@chapter @uref{https://api.jquery.com/fadeOut/,.fadeOut()}
+@anchor{#fadeout}
+@findex fadeOut
+Hide the matched elements by fading them to transparent.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/fading/,Fading}
+
+@node fadeTo
+@chapter @uref{https://api.jquery.com/fadeTo/,.fadeTo()}
+@anchor{#fadeto}
+@findex fadeTo
+Adjust the opacity of the matched elements.
+@uref{https://api.jquery.com/category/effects/,Effects} |
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/fading/,Fading}
+
+@node fadeToggle
+@chapter @uref{https://api.jquery.com/fadeToggle/,.fadeToggle()}
+@anchor{#fadetoggle}
+@findex fadeToggle
+Display or hide the matched elements by animating their opacity.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form} |
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node file Selector
+@chapter @uref{https://api.jquery.com/file-selector/,:file Selector}
+@anchor{#file-selector}
+@findex file Selector
+Selects all elements of type file.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/filtering/,Filtering}
+
+@node filter
+@chapter @uref{https://api.jquery.com/filter/,.filter()}
+@anchor{#filter}
+@findex filter
+Reduce the set of matched elements to those that match the selector or
+pass the function's test.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/tree-traversal/,Tree
+Traversal}
+
+@node find
+@chapter @uref{https://api.jquery.com/find/,.find()}
+@anchor{#find}
+@findex find
+Get the descendants of each element in the current set of matched
+elements, filtered by a selector, jQuery object, or element.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/custom-effects/,Custom}
+
+@node finish
+@chapter @uref{https://api.jquery.com/finish/,.finish()}
+@anchor{#finish}
+@findex finish
+Stop the currently-running animation, remove all queued animations, and
+complete all animations for the matched elements.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/filtering/,Filtering}
+
+@node first
+@chapter @uref{https://api.jquery.com/first/,.first()}
+@anchor{#first}
+@findex first
+Reduce the set of matched elements to the first in the set.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/child-filter-selectors/,Child
+Filter}
+
+@node first-child Selector
+@chapter @uref{https://api.jquery.com/first-child-selector/,:first-child Selector}
+@anchor{#first-child-selector}
+@findex first-child Selector
+Selects all elements that are the first child of their parent.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/child-filter-selectors/,Child
+Filter}
+
+@node first-of-type Selector
+@chapter @uref{https://api.jquery.com/first-of-type-selector/,:first-of-type Selector}
+@anchor{#first-of-type-selector}
+@findex first-of-type Selector
+Selects all elements that are the first among siblings of the same
+element name.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-filter-selectors/,Basic
+Filter} | @uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node first Selector
+@chapter @uref{https://api.jquery.com/first-selector/,:first Selector}
+@anchor{#first-selector}
+@findex first Selector
+Selects the first matched DOM element.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/form-events/,Form Events} |
+@uref{https://api.jquery.com/category/forms/,Forms}
+
+@node focus
+@chapter @uref{https://api.jquery.com/focus/,.focus()}
+@anchor{#focus}
+@findex focus
+Bind an event handler to the “focus” JavaScript event, or trigger that
+event on an element.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-filter-selectors/,Basic
+Filter} | @uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form}
+
+@node focus Selector
+@chapter @uref{https://api.jquery.com/focus-selector/,:focus Selector}
+@anchor{#focus-selector}
+@findex focus Selector
+Selects element if it is currently focused.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/form-events/,Form Events} |
+@uref{https://api.jquery.com/category/forms/,Forms}
+
+@node focusin
+@chapter @uref{https://api.jquery.com/focusin/,.focusin()}
+@anchor{#focusin}
+@findex focusin
+Bind an event handler to the “focusin” event.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/form-events/,Form Events} |
+@uref{https://api.jquery.com/category/forms/,Forms}
+
+@node focusout
+@chapter @uref{https://api.jquery.com/focusout/,.focusout()}
+@anchor{#focusout}
+@findex focusout
+Bind an event handler to the “focusout” JavaScript event.
+@uref{https://api.jquery.com/category/miscellaneous/,Miscellaneous} >
+@uref{https://api.jquery.com/category/miscellaneous/dom-element-methods/,DOM
+Element Methods}
+
+@node get
+@chapter @uref{https://api.jquery.com/get/,.get()}
+@anchor{#get}
+@findex get
+Retrieve the DOM elements matched by the jQuery object.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-filter-selectors/,Basic
+Filter} | @uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node gt Selector
+@chapter @uref{https://api.jquery.com/gt-selector/,:gt() Selector}
+@anchor{#gt-selector}
+@findex gt Selector
+Select all elements at an index greater than index within the matched
+set.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/filtering/,Filtering}
+
+@node has
+@chapter @uref{https://api.jquery.com/has/,.has()}
+@anchor{#has}
+@findex has
+Reduce the set of matched elements to those that have a descendant that
+matches the selector or DOM element.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/attribute-selectors/,Attribute}
+
+@node Has Attribute Selector [name]
+@chapter @uref{https://api.jquery.com/has-attribute-selector/,Has Attribute Selector [name]}
+@anchor{#has-attribute-selector-name}
+@findex Has Attribute Selector
+Selects elements that have the specified attribute, with any value.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/content-filter-selector/,Content
+Filter} | @uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node has Selector
+@chapter @uref{https://api.jquery.com/has-selector/,:has() Selector}
+@anchor{#has-selector}
+@findex has Selector
+Selects elements which contain at least one element that matches the
+specified selector.
+@uref{https://api.jquery.com/category/attributes/,Attributes} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/class-attribute/,Class
+Attribute} | @uref{https://api.jquery.com/category/css/,CSS}
+
+@node hasClass
+@chapter @uref{https://api.jquery.com/hasClass/,.hasClass()}
+@anchor{#hasclass}
+@findex hasClass
+Determine whether any of the matched elements are assigned the given
+class.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-filter-selectors/,Basic
+Filter} | @uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node header Selector
+@chapter @uref{https://api.jquery.com/header-selector/,:header Selector}
+@anchor{#header-selector}
+@findex header Selector
+Selects all elements that are headers, like h1, h2, h3 and so on.
+@uref{https://api.jquery.com/category/css/,CSS} |
+@uref{https://api.jquery.com/category/dimensions/,Dimensions} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/style-properties/,Style
+Properties}
+
+@node height
+@chapter @uref{https://api.jquery.com/height/,.height()}
+@anchor{#height}
+@findex height
+Get the current computed height for the first element in the set of
+matched elements or set the height of every matched element.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions} |
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/visibility-filter-selectors/,Visibility
+Filter}
+
+@node hidden Selector
+@chapter @uref{https://api.jquery.com/hidden-selector/,:hidden Selector}
+@anchor{#hidden-selector}
+@findex hidden Selector
+Selects all elements that are hidden.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/basics/,Basics}
+
+@node hide
+@chapter @uref{https://api.jquery.com/hide/,.hide()}
+@anchor{#hide}
+@findex hide
+Hide the matched elements.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/mouse-events/,Mouse Events}
+
+@node hover
+@chapter @uref{https://api.jquery.com/hover/,.hover()}
+@anchor{#hover}
+@findex hover
+Bind one or two handlers to the matched elements, to be executed when
+the mouse pointer enters and leaves the elements.
+@uref{https://api.jquery.com/category/attributes/,Attributes} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-inside/,DOM
+Insertion, Inside}
+
+@node html
+@chapter @uref{https://api.jquery.com/html/,.html()}
+@anchor{#html}
+@findex html
+Get the HTML contents of the first element in the set of matched
+elements or set the HTML contents of every matched element.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-css-selectors/,Basic}
+
+@node ID Selector “#id”
+@chapter @uref{https://api.jquery.com/id-selector/,ID Selector (“#id”)}
+@anchor{#id-selector-id}
+@findex ID Selector
+Selects a single element with the given id attribute.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form} |
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node image Selector
+@chapter @uref{https://api.jquery.com/image-selector/,:image Selector}
+@anchor{#image-selector}
+@findex image Selector
+Selects all elements of type image.
+@uref{https://api.jquery.com/category/miscellaneous/,Miscellaneous} >
+@uref{https://api.jquery.com/category/miscellaneous/dom-element-methods/,DOM
+Element Methods}
+
+@node index
+@chapter @uref{https://api.jquery.com/index/,.index()}
+@anchor{#index}
+@findex index
+Search for a given element from among the matched elements.
+@uref{https://api.jquery.com/category/css/,CSS} |
+@uref{https://api.jquery.com/category/dimensions/,Dimensions} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/style-properties/,Style
+Properties}
+
+@node innerHeight
+@chapter @uref{https://api.jquery.com/innerHeight/,.innerHeight()}
+@anchor{#innerheight}
+@findex innerHeight
+Get the current computed inner height (including padding but not border)
+for the first element in the set of matched elements or set the inner
+height of every matched element.
+@uref{https://api.jquery.com/category/css/,CSS} |
+@uref{https://api.jquery.com/category/dimensions/,Dimensions} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/style-properties/,Style
+Properties}
+
+@node innerWidth
+@chapter @uref{https://api.jquery.com/innerWidth/,.innerWidth()}
+@anchor{#innerwidth}
+@findex innerWidth
+Get the current computed inner width (including padding but not border)
+for the first element in the set of matched elements or set the inner
+width of every matched element.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form} |
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node input Selector
+@chapter @uref{https://api.jquery.com/input-selector/,:input Selector}
+@anchor{#input-selector}
+@findex input Selector
+Selects all input, textarea, select and button elements.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-outside/,DOM
+Insertion, Outside}
+
+@node insertAfter
+@chapter @uref{https://api.jquery.com/insertAfter/,.insertAfter()}
+@anchor{#insertafter}
+@findex insertAfter
+Insert every element in the set of matched elements after the target.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-outside/,DOM
+Insertion, Outside}
+
+@node insertBefore
+@chapter @uref{https://api.jquery.com/insertBefore/,.insertBefore()}
+@anchor{#insertbefore}
+@findex insertBefore
+Insert every element in the set of matched elements before the target.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/filtering/,Filtering}
+
+@node is
+@chapter @uref{https://api.jquery.com/is/,.is()}
+@anchor{#is}
+@findex is
+Check the current matched set of elements against a selector, element,
+or jQuery object and return true if at least one of these elements
+matches the given arguments.
+@uref{https://api.jquery.com/category/core/,Core}
+
+@node jQuery
+@chapter @uref{https://api.jquery.com/jQuery/,jQuery()}
+@anchor{#jquery}
+@findex jQuery
+Return a collection of matched elements either found in the DOM based on
+passed argument(s) or created by passing an HTML string.
+@uref{https://api.jquery.com/category/internals/,Internals} |
+@uref{https://api.jquery.com/category/properties/,Properties} >
+@uref{https://api.jquery.com/category/properties/jquery-object-instance-properties/,Properties
+of jQuery Object Instances}
+
+@node jquery
+@chapter @uref{https://api.jquery.com/jquery-2/,.jquery}
+@anchor{#jquery-1}
+@findex jquery
+A string containing the jQuery version number.
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/low-level-interface/,Low-Level
+Interface}
+
+@node jQueryajax
+@chapter @uref{https://api.jquery.com/jQuery.ajax/,jQuery.ajax()}
+@anchor{#jquery.ajax}
+@findex jQueryajax
+Perform an asynchronous HTTP (Ajax) request.
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/low-level-interface/,Low-Level
+Interface}
+
+@node jQueryajaxPrefilter
+@chapter @uref{https://api.jquery.com/jQuery.ajaxPrefilter/,jQuery.ajaxPrefilter()}
+@anchor{#jquery.ajaxprefilter}
+@findex jQueryajaxPrefilter
+Handle custom Ajax options or modify existing options before each
+request is sent and before they are processed by $.ajax().
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/low-level-interface/,Low-Level
+Interface}
+
+@node jQueryajaxSetup
+@chapter @uref{https://api.jquery.com/jQuery.ajaxSetup/,jQuery.ajaxSetup()}
+@anchor{#jquery.ajaxsetup}
+@findex jQueryajaxSetup
+Set default values for future Ajax requests. Its use is not recommended.
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/low-level-interface/,Low-Level
+Interface}
+
+@node jQueryajaxTransport
+@chapter @uref{https://api.jquery.com/jQuery.ajaxTransport/,jQuery.ajaxTransport()}
+@anchor{#jquery.ajaxtransport}
+@findex jQueryajaxTransport
+Creates an object that handles the actual transmission of Ajax data.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.3/,Deprecated
+1.3} | @uref{https://api.jquery.com/category/removed/,Removed} |
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryboxModel
+@chapter @uref{https://api.jquery.com/jQuery.boxModel/,jQuery.boxModel}
+@anchor{#jquery.boxmodel}
+@findex jQueryboxModel
+States if the current page, in the user's browser, is being rendered
+using the W3C CSS Box Model. This property was removed in jQuery 1.8.
+Please try to use feature detection instead.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.3/,Deprecated
+1.3} | @uref{https://api.jquery.com/category/properties/,Properties} >
+@uref{https://api.jquery.com/category/properties/global-jquery-object-properties/,Properties
+of the Global jQuery Object} |
+@uref{https://api.jquery.com/category/removed/,Removed} |
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQuerybrowser
+@chapter @uref{https://api.jquery.com/jQuery.browser/,jQuery.browser}
+@anchor{#jquery.browser}
+@findex jQuerybrowser
+Contains flags for the useragent, read from navigator.userAgent. This
+property was removed in jQuery 1.9 and is available only through the
+jQuery.migrate plugin. Please try to use feature detection instead.
+@uref{https://api.jquery.com/category/callbacks-object/,Callbacks
+Object}
+
+@node jQueryCallbacks
+@chapter @uref{https://api.jquery.com/jQuery.Callbacks/,jQuery.Callbacks()}
+@anchor{#jquery.callbacks}
+@findex jQueryCallbacks
+A multi-purpose callbacks list object that provides a powerful way to
+manage callback lists.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQuerycontains
+@chapter @uref{https://api.jquery.com/jQuery.contains/,jQuery.contains()}
+@anchor{#jquery.contains}
+@findex jQuerycontains
+Check to see if a DOM element is a descendant of another DOM element.
+@uref{https://api.jquery.com/category/css/,CSS}
+
+@node jQuerycssHooks
+@chapter @uref{https://api.jquery.com/jQuery.cssHooks/,jQuery.cssHooks}
+@anchor{#jquery.csshooks}
+@findex jQuerycssHooks
+Hook directly into jQuery to override how particular CSS properties are
+retrieved or set, normalize CSS property naming, or create custom
+properties.
+@uref{https://api.jquery.com/category/css/,CSS} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/style-properties/,Style
+Properties}
+
+@node jQuerycssNumber
+@chapter @uref{https://api.jquery.com/jQuery.cssNumber/,jQuery.cssNumber}
+@anchor{#jquery.cssnumber}
+@findex jQuerycssNumber
+An object containing all CSS properties that may be used without a unit.
+The .css() method uses this object to see if it may append px to
+unitless values.
+@uref{https://api.jquery.com/category/data/,Data} |
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQuerydata
+@chapter @uref{https://api.jquery.com/jQuery.data/,jQuery.data()}
+@anchor{#jquery.data}
+@findex jQuerydata
+Store arbitrary data associated with the specified element and/or return
+the value that was set.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node jQueryDeferred
+@chapter @uref{https://api.jquery.com/jQuery.Deferred/,jQuery.Deferred()}
+@anchor{#jquery.deferred}
+@findex jQueryDeferred
+A factory function that returns a chainable utility object with methods
+to register multiple callbacks into callback queues, invoke callback
+queues, and relay the success or failure state of any synchronous or
+asynchronous function.
+@uref{https://api.jquery.com/category/data/,Data} |
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQuerydequeue
+@chapter @uref{https://api.jquery.com/jQuery.dequeue/,jQuery.dequeue()}
+@anchor{#jquery.dequeue}
+@findex jQuerydequeue
+Execute the next function on the queue for the matched element.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryeach
+@chapter @uref{https://api.jquery.com/jQuery.each/,jQuery.each()}
+@anchor{#jquery.each}
+@findex jQueryeach
+A generic iterator function, which can be used to seamlessly iterate
+over both objects and arrays. Arrays and array-like objects with a
+length property (such as a function's arguments object) are iterated by
+numeric index, from 0 to length-1. Other objects are iterated via their
+named properties.
+@uref{https://api.jquery.com/category/internals/,Internals}
+
+@node jQueryerror
+@chapter @uref{https://api.jquery.com/jQuery.error/,jQuery.error()}
+@anchor{#jquery.error}
+@findex jQueryerror
+Takes a string and throws an exception containing it.
+@uref{https://api.jquery.com/category/css/,CSS}
+
+@node jQueryescapeSelector
+@chapter @uref{https://api.jquery.com/jQuery.escapeSelector/,jQuery.escapeSelector()}
+@anchor{#jquery.escapeselector}
+@findex jQueryescapeSelector
+Escapes any character that has a special meaning in a CSS selector.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryextend
+@chapter @uref{https://api.jquery.com/jQuery.extend/,jQuery.extend()}
+@anchor{#jquery.extend}
+@findex jQueryextend
+Merge the contents of two or more objects together into the first
+object.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryfnextend
+@chapter @uref{https://api.jquery.com/jQuery.fn.extend/,jQuery.fn.extend()}
+@anchor{#jquery.fn.extend}
+@findex jQueryfnextend
+Merge the contents of an object onto the jQuery prototype to provide new
+jQuery instance methods.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/custom-effects/,Custom} |
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-3.0/,Deprecated
+3.0} | @uref{https://api.jquery.com/category/properties/,Properties} >
+@uref{https://api.jquery.com/category/properties/global-jquery-object-properties/,Properties
+of the Global jQuery Object}
+
+@node jQueryfxinterval
+@chapter @uref{https://api.jquery.com/jQuery.fx.interval/,jQuery.fx.interval}
+@anchor{#jquery.fx.interval}
+@findex jQueryfxinterval
+The rate (in milliseconds) at which animations fire.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/custom-effects/,Custom} |
+@uref{https://api.jquery.com/category/properties/,Properties} >
+@uref{https://api.jquery.com/category/properties/global-jquery-object-properties/,Properties
+of the Global jQuery Object}
+
+@node jQueryfxoff
+@chapter @uref{https://api.jquery.com/jQuery.fx.off/,jQuery.fx.off}
+@anchor{#jquery.fx.off}
+@findex jQueryfxoff
+Globally disable all animations.
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/shorthand-methods/,Shorthand
+Methods}
+
+@node jQueryget
+@chapter @uref{https://api.jquery.com/jQuery.get/,jQuery.get()}
+@anchor{#jquery.get}
+@findex jQueryget
+Load data from the server using a HTTP GET request.
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/shorthand-methods/,Shorthand
+Methods}
+
+@node jQuerygetJSON
+@chapter @uref{https://api.jquery.com/jQuery.getJSON/,jQuery.getJSON()}
+@anchor{#jquery.getjson}
+@findex jQuerygetJSON
+Load JSON-encoded data from the server using a GET HTTP request.
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/shorthand-methods/,Shorthand
+Methods}
+
+@node jQuerygetScript
+@chapter @uref{https://api.jquery.com/jQuery.getScript/,jQuery.getScript()}
+@anchor{#jquery.getscript}
+@findex jQuerygetScript
+Load a JavaScript file from the server using a GET HTTP request, then
+execute it.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryglobalEval
+@chapter @uref{https://api.jquery.com/jQuery.globalEval/,jQuery.globalEval()}
+@anchor{#jquery.globaleval}
+@findex jQueryglobalEval
+Execute some JavaScript code globally.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQuerygrep
+@chapter @uref{https://api.jquery.com/jQuery.grep/,jQuery.grep()}
+@anchor{#jquery.grep}
+@findex jQuerygrep
+Finds the elements of an array which satisfy a filter function. The
+original array is not affected.
+@uref{https://api.jquery.com/category/data/,Data}
+
+@node jQueryhasData
+@chapter @uref{https://api.jquery.com/jQuery.hasData/,jQuery.hasData()}
+@anchor{#jquery.hasdata}
+@findex jQueryhasData
+Determine whether an element has any jQuery data associated with it.
+@uref{https://api.jquery.com/category/core/,Core} |
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/document-loading/,Document
+Loading} | @uref{https://api.jquery.com/category/properties/,Properties}
+>
+@uref{https://api.jquery.com/category/properties/global-jquery-object-properties/,Properties
+of the Global jQuery Object}
+
+@node jQueryholdReady
+@chapter @uref{https://api.jquery.com/jQuery.holdReady/,jQuery.holdReady()}
+@anchor{#jquery.holdready}
+@findex jQueryholdReady
+Holds or releases the execution of jQuery's ready event.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation}
+
+@node jQueryhtmlPrefilter
+@chapter @uref{https://api.jquery.com/jQuery.htmlPrefilter/,jQuery.htmlPrefilter()}
+@anchor{#jquery.htmlprefilter}
+@findex jQueryhtmlPrefilter
+Modify and filter HTML strings passed through jQuery manipulation
+methods.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryinArray
+@chapter @uref{https://api.jquery.com/jQuery.inArray/,jQuery.inArray()}
+@anchor{#jquery.inarray}
+@findex jQueryinArray
+Search for a specified value within an array and return its index (or -1
+if not found).
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryisArray
+@chapter @uref{https://api.jquery.com/jQuery.isArray/,jQuery.isArray()}
+@anchor{#jquery.isarray}
+@findex jQueryisArray
+Determine whether the argument is an array.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryisEmptyObject
+@chapter @uref{https://api.jquery.com/jQuery.isEmptyObject/,jQuery.isEmptyObject()}
+@anchor{#jquery.isemptyobject}
+@findex jQueryisEmptyObject
+Check to see if an object is empty (contains no enumerable properties).
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-3.3/,Deprecated
+3.3} | @uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryisFunction
+@chapter @uref{https://api.jquery.com/jQuery.isFunction/,jQuery.isFunction()}
+@anchor{#jquery.isfunction}
+@findex jQueryisFunction
+Determines if its argument is callable as a function.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryisNumeric
+@chapter @uref{https://api.jquery.com/jQuery.isNumeric/,jQuery.isNumeric()}
+@anchor{#jquery.isnumeric}
+@findex jQueryisNumeric
+Determines whether its argument represents a JavaScript number.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryisPlainObject
+@chapter @uref{https://api.jquery.com/jQuery.isPlainObject/,jQuery.isPlainObject()}
+@anchor{#jquery.isplainobject}
+@findex jQueryisPlainObject
+Check to see if an object is a plain object (created using “@{@}” or
+“new Object”).
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-3.3/,Deprecated
+3.3} | @uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryisWindow
+@chapter @uref{https://api.jquery.com/jQuery.isWindow/,jQuery.isWindow()}
+@anchor{#jquery.iswindow}
+@findex jQueryisWindow
+Determine whether the argument is a window.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryisXMLDoc
+@chapter @uref{https://api.jquery.com/jQuery.isXMLDoc/,jQuery.isXMLDoc()}
+@anchor{#jquery.isxmldoc}
+@findex jQueryisXMLDoc
+Check to see if a DOM node is within an XML document (or is an XML
+document).
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQuerymakeArray
+@chapter @uref{https://api.jquery.com/jQuery.makeArray/,jQuery.makeArray()}
+@anchor{#jquery.makearray}
+@findex jQuerymakeArray
+Convert an array-like object into a true JavaScript array.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQuerymap
+@chapter @uref{https://api.jquery.com/jQuery.map/,jQuery.map()}
+@anchor{#jquery.map}
+@findex jQuerymap
+Translate all items in an array or object to new array of items.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQuerymerge
+@chapter @uref{https://api.jquery.com/jQuery.merge/,jQuery.merge()}
+@anchor{#jquery.merge}
+@findex jQuerymerge
+Merge the contents of two arrays together into the first array.
+@uref{https://api.jquery.com/category/core/,Core} |
+@uref{https://api.jquery.com/category/miscellaneous/,Miscellaneous} >
+@uref{https://api.jquery.com/category/miscellaneous/setup-methods/,Setup
+Methods}
+
+@node jQuerynoConflict
+@chapter @uref{https://api.jquery.com/jQuery.noConflict/,jQuery.noConflict()}
+@anchor{#jquery.noconflict}
+@findex jQuerynoConflict
+Relinquish jQuery's control of the $ variable.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQuerynoop
+@chapter @uref{https://api.jquery.com/jQuery.noop/,jQuery.noop()}
+@anchor{#jquery.noop}
+@findex jQuerynoop
+An empty function.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQuerynow
+@chapter @uref{https://api.jquery.com/jQuery.now/,jQuery.now()}
+@anchor{#jquery.now}
+@findex jQuerynow
+Return a number representing the current time.
+@uref{https://api.jquery.com/category/miscellaneous/,Miscellaneous} >
+@uref{https://api.jquery.com/category/miscellaneous/collection-manipulation/,Collection
+Manipulation} | @uref{https://api.jquery.com/category/forms/,Forms} |
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/helper-functions/,Helper
+Functions}
+
+@node jQueryparam
+@chapter @uref{https://api.jquery.com/jQuery.param/,jQuery.param()}
+@anchor{#jquery.param}
+@findex jQueryparam
+Create a serialized representation of an array, a plain object, or a
+jQuery object suitable for use in a URL query string or Ajax request. In
+case a jQuery object is passed, it should contain input elements with
+name/value properties.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryparseHTML
+@chapter @uref{https://api.jquery.com/jQuery.parseHTML/,jQuery.parseHTML()}
+@anchor{#jquery.parsehtml}
+@findex jQueryparseHTML
+Parses a string into an array of DOM nodes.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-3.0/,Deprecated
+3.0} | @uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryparseJSON
+@chapter @uref{https://api.jquery.com/jQuery.parseJSON/,jQuery.parseJSON()}
+@anchor{#jquery.parsejson}
+@findex jQueryparseJSON
+Takes a well-formed JSON string and returns the resulting JavaScript
+value.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryparseXML
+@chapter @uref{https://api.jquery.com/jQuery.parseXML/,jQuery.parseXML()}
+@anchor{#jquery.parsexml}
+@findex jQueryparseXML
+Parses a string into an XML document.
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/shorthand-methods/,Shorthand
+Methods}
+
+@node jQuerypost
+@chapter @uref{https://api.jquery.com/jQuery.post/,jQuery.post()}
+@anchor{#jquery.post}
+@findex jQuerypost
+Load data from the server using a HTTP POST request.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-handler-attachment/,Event
+Handler Attachment} |
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryproxy
+@chapter @uref{https://api.jquery.com/jQuery.proxy/,jQuery.proxy()}
+@anchor{#jquery.proxy}
+@findex jQueryproxy
+Takes a function and returns a new one that will always have a
+particular context.
+@uref{https://api.jquery.com/category/data/,Data} |
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryqueue
+@chapter @uref{https://api.jquery.com/jQuery.queue/,jQuery.queue()}
+@anchor{#jquery.queue}
+@findex jQueryqueue
+Show or manipulate the queue of functions to be executed on the matched
+element.
+@uref{https://api.jquery.com/category/core/,Core} |
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/document-loading/,Document
+Loading} | @uref{https://api.jquery.com/category/properties/,Properties}
+>
+@uref{https://api.jquery.com/category/properties/global-jquery-object-properties/,Properties
+of the Global jQuery Object}
+
+@node jQueryready
+@chapter @uref{https://api.jquery.com/jQuery.ready/,jQuery.ready}
+@anchor{#jquery.ready}
+@findex jQueryready
+A Promise-like object (or “thenable”) that resolves when the document is
+ready.
+@uref{https://api.jquery.com/category/core/,Core}
+
+@node jQueryreadyException
+@chapter @uref{https://api.jquery.com/jQuery.readyException/,jQuery.readyException()}
+@anchor{#jquery.readyexception}
+@findex jQueryreadyException
+Handles errors thrown synchronously in functions wrapped in jQuery().
+@uref{https://api.jquery.com/category/data/,Data} |
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryremoveData
+@chapter @uref{https://api.jquery.com/jQuery.removeData/,jQuery.removeData()}
+@anchor{#jquery.removedata}
+@findex jQueryremoveData
+Remove a previously-stored piece of data.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/custom-effects/,Custom}
+
+@node jQueryspeed
+@chapter @uref{https://api.jquery.com/jQuery.speed/,jQuery.speed}
+@anchor{#jquery.speed}
+@findex jQueryspeed
+Creates an object containing a set of properties ready to be used in the
+definition of custom animations.
+@uref{https://api.jquery.com/category/core/,Core} |
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.7/,Deprecated
+1.7} | @uref{https://api.jquery.com/category/removed/,Removed}
+
+@node jQuerysub
+@chapter @uref{https://api.jquery.com/jQuery.sub/,jQuery.sub()}
+@anchor{#jquery.sub}
+@findex jQuerysub
+Creates a new copy of jQuery whose properties and methods can be
+modified without affecting the original jQuery object.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.9/,Deprecated
+1.9} | @uref{https://api.jquery.com/category/properties/,Properties} >
+@uref{https://api.jquery.com/category/properties/global-jquery-object-properties/,Properties
+of the Global jQuery Object} |
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQuerysupport
+@chapter @uref{https://api.jquery.com/jQuery.support/,jQuery.support}
+@anchor{#jquery.support}
+@findex jQuerysupport
+A collection of properties that represent the presence of different
+browser features or bugs. Intended for jQuery's internal use; specific
+properties may be removed when they are no longer needed internally to
+improve page startup performance. For your own project's
+feature-detection needs, we strongly recommend the use of an external
+library such as Modernizr instead of dependency on properties in
+jQuery.support.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQuerytrim
+@chapter @uref{https://api.jquery.com/jQuery.trim/,jQuery.trim()}
+@anchor{#jquery.trim}
+@findex jQuerytrim
+Remove the whitespace from the beginning and end of a string.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQuerytype
+@chapter @uref{https://api.jquery.com/jQuery.type/,jQuery.type()}
+@anchor{#jquery.type}
+@findex jQuerytype
+Determine the internal JavaScript [[Class]] of an object.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-3.0/,Deprecated
+3.0} | @uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryunique
+@chapter @uref{https://api.jquery.com/jQuery.unique/,jQuery.unique()}
+@anchor{#jquery.unique}
+@findex jQueryunique
+Sorts an array of DOM elements, in place, with the duplicates removed.
+Note that this only works on arrays of DOM elements, not strings or
+numbers.
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node jQueryuniqueSort
+@chapter @uref{https://api.jquery.com/jQuery.uniqueSort/,jQuery.uniqueSort()}
+@anchor{#jquery.uniquesort}
+@findex jQueryuniqueSort
+Sorts an array of DOM elements, in place, with the duplicates removed.
+Note that this only works on arrays of DOM elements, not strings or
+numbers.
+@uref{https://api.jquery.com/category/core/,Core} |
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node jQuerywhen
+@chapter @uref{https://api.jquery.com/jQuery.when/,jQuery.when()}
+@anchor{#jquery.when}
+@findex jQuerywhen
+Provides a way to execute callback functions based on zero or more
+Thenable objects, usually Deferred objects that represent asynchronous
+events.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/keyboard-events/,Keyboard
+Events}
+
+@node keydown
+@chapter @uref{https://api.jquery.com/keydown/,.keydown()}
+@anchor{#keydown}
+@findex keydown
+Bind an event handler to the “keydown” JavaScript event, or trigger that
+event on an element.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/keyboard-events/,Keyboard
+Events}
+
+@node keypress
+@chapter @uref{https://api.jquery.com/keypress/,.keypress()}
+@anchor{#keypress}
+@findex keypress
+Bind an event handler to the “keypress” JavaScript event, or trigger
+that event on an element.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/keyboard-events/,Keyboard
+Events}
+
+@node keyup
+@chapter @uref{https://api.jquery.com/keyup/,.keyup()}
+@anchor{#keyup}
+@findex keyup
+Bind an event handler to the “keyup” JavaScript event, or trigger that
+event on an element.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-filter-selectors/,Basic
+Filter}
+
+@node lang Selector
+@chapter @uref{https://api.jquery.com/lang-selector/,:lang() Selector}
+@anchor{#lang-selector}
+@findex lang Selector
+Selects all elements of the specified language.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/filtering/,Filtering}
+
+@node last
+@chapter @uref{https://api.jquery.com/last/,.last()}
+@anchor{#last}
+@findex last
+Reduce the set of matched elements to the final one in the set.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/child-filter-selectors/,Child
+Filter}
+
+@node last-child Selector
+@chapter @uref{https://api.jquery.com/last-child-selector/,:last-child Selector}
+@anchor{#last-child-selector}
+@findex last-child Selector
+Selects all elements that are the last child of their parent.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/child-filter-selectors/,Child
+Filter}
+
+@node last-of-type Selector
+@chapter @uref{https://api.jquery.com/last-of-type-selector/,:last-of-type Selector}
+@anchor{#last-of-type-selector}
+@findex last-of-type Selector
+Selects all elements that are the last among siblings of the same
+element name.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-filter-selectors/,Basic
+Filter} | @uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node last Selector
+@chapter @uref{https://api.jquery.com/last-selector/,:last Selector}
+@anchor{#last-selector}
+@findex last Selector
+Selects the last matched element.
+@uref{https://api.jquery.com/category/properties/,Properties} >
+@uref{https://api.jquery.com/category/properties/jquery-object-instance-properties/,Properties
+of jQuery Object Instances}
+
+@node length
+@chapter @uref{https://api.jquery.com/length/,.length}
+@anchor{#length}
+@findex length
+The number of elements in the jQuery object.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.7/,Deprecated
+1.7} | @uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-handler-attachment/,Event
+Handler Attachment} |
+@uref{https://api.jquery.com/category/removed/,Removed}
+
+@node live
+@chapter @uref{https://api.jquery.com/live/,.live()}
+@anchor{#live}
+@findex live
+Attach an event handler for all elements which match the current
+selector, now and in the future.
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/shorthand-methods/,Shorthand
+Methods}
+
+@node load
+@chapter @uref{https://api.jquery.com/load/,.load()}
+@anchor{#load}
+@findex load
+Load data from the server and place the returned HTML into the matched
+elements.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.8/,Deprecated
+1.8} | @uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/document-loading/,Document
+Loading} | @uref{https://api.jquery.com/category/removed/,Removed}
+
+@node load 1
+@chapter @uref{https://api.jquery.com/load-event/,.load()}
+@anchor{#load-1}
+@findex load 1
+Bind an event handler to the “load” JavaScript event.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-filter-selectors/,Basic
+Filter} | @uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node lt Selector
+@chapter @uref{https://api.jquery.com/lt-selector/,:lt() Selector}
+@anchor{#lt-selector}
+@findex lt Selector
+Select all elements at an index less than index within the matched set.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/filtering/,Filtering}
+
+@node map
+@chapter @uref{https://api.jquery.com/map/,.map()}
+@anchor{#map}
+@findex map
+Pass each element in the current matched set through a function,
+producing a new jQuery object containing the return values.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/mouse-events/,Mouse Events}
+
+@node mousedown
+@chapter @uref{https://api.jquery.com/mousedown/,.mousedown()}
+@anchor{#mousedown}
+@findex mousedown
+Bind an event handler to the “mousedown” JavaScript event, or trigger
+that event on an element.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/mouse-events/,Mouse Events}
+
+@node mouseenter
+@chapter @uref{https://api.jquery.com/mouseenter/,.mouseenter()}
+@anchor{#mouseenter}
+@findex mouseenter
+Bind an event handler to be fired when the mouse enters an element, or
+trigger that handler on an element.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/mouse-events/,Mouse Events}
+
+@node mouseleave
+@chapter @uref{https://api.jquery.com/mouseleave/,.mouseleave()}
+@anchor{#mouseleave}
+@findex mouseleave
+Bind an event handler to be fired when the mouse leaves an element, or
+trigger that handler on an element.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/mouse-events/,Mouse Events}
+
+@node mousemove
+@chapter @uref{https://api.jquery.com/mousemove/,.mousemove()}
+@anchor{#mousemove}
+@findex mousemove
+Bind an event handler to the “mousemove” JavaScript event, or trigger
+that event on an element.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/mouse-events/,Mouse Events}
+
+@node mouseout
+@chapter @uref{https://api.jquery.com/mouseout/,.mouseout()}
+@anchor{#mouseout}
+@findex mouseout
+Bind an event handler to the “mouseout” JavaScript event, or trigger
+that event on an element.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/mouse-events/,Mouse Events}
+
+@node mouseover
+@chapter @uref{https://api.jquery.com/mouseover/,.mouseover()}
+@anchor{#mouseover}
+@findex mouseover
+Bind an event handler to the “mouseover” JavaScript event, or trigger
+that event on an element.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/mouse-events/,Mouse Events}
+
+@node mouseup
+@chapter @uref{https://api.jquery.com/mouseup/,.mouseup()}
+@anchor{#mouseup}
+@findex mouseup
+Bind an event handler to the “mouseup” JavaScript event, or trigger that
+event on an element.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/attribute-selectors/,Attribute}
+
+@node Multiple Attribute Selector [name=”value”][name2=”value2″]
+@chapter @uref{https://api.jquery.com/multiple-attribute-selector/,Multiple Attribute Selector [name=”value”][name2=”value2″]}
+@anchor{#multiple-attribute-selector-namevaluename2value2}
+@findex Multiple Attribute Selector
+Matches elements that match all of the specified attribute filters.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-css-selectors/,Basic}
+
+@node Multiple Selector “selector1 selector2 selectorN”
+@chapter @uref{https://api.jquery.com/multiple-selector/,Multiple Selector (“selector1, selector2, selectorN”)}
+@anchor{#multiple-selector-selector1-selector2-selectorn}
+@findex Multiple Selector
+Selects the combined results of all the specified selectors.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/tree-traversal/,Tree
+Traversal}
+
+@node next
+@chapter @uref{https://api.jquery.com/next/,.next()}
+@anchor{#next}
+@findex next
+Get the immediately following sibling of each element in the set of
+matched elements. If a selector is provided, it retrieves the next
+sibling only if it matches that selector.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/hierarchy-selectors/,Hierarchy}
+
+@node Next Adjacent Selector “prev + next”
+@chapter @uref{https://api.jquery.com/next-adjacent-selector/,Next Adjacent Selector (“prev + next”)}
+@anchor{#next-adjacent-selector-prev-next}
+@findex Next Adjacent Selector 
+Selects all next elements matching “next” that are immediately preceded
+by a sibling “prev”.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/hierarchy-selectors/,Hierarchy}
+
+@node Next Siblings Selector “prev ~ siblings”
+@chapter @uref{https://api.jquery.com/next-siblings-selector/,Next Siblings Selector (“prev ~ siblings”)}
+@anchor{#next-siblings-selector-prev-siblings}
+@findex Next Siblings Selector 
+Selects all sibling elements that follow after the “prev” element, have
+the same parent, and match the filtering “siblings” selector.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/tree-traversal/,Tree
+Traversal}
+
+@node nextAll
+@chapter @uref{https://api.jquery.com/nextAll/,.nextAll()}
+@anchor{#nextall}
+@findex nextAll
+Get all following siblings of each element in the set of matched
+elements, optionally filtered by a selector.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/tree-traversal/,Tree
+Traversal}
+
+@node nextUntil
+@chapter @uref{https://api.jquery.com/nextUntil/,.nextUntil()}
+@anchor{#nextuntil}
+@findex nextUntil
+Get all following siblings of each element up to but not including the
+element matched by the selector, DOM node, or jQuery object passed.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/filtering/,Filtering} |
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/miscellaneous-traversal/,Miscellaneous
+Traversing}
+
+@node not
+@chapter @uref{https://api.jquery.com/not/,.not()}
+@anchor{#not}
+@findex not
+Remove elements from the set of matched elements.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-filter-selectors/,Basic
+Filter}
+
+@node not Selector
+@chapter @uref{https://api.jquery.com/not-selector/,:not() Selector}
+@anchor{#not-selector}
+@findex not Selector
+Selects all elements that do not match the given selector.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/child-filter-selectors/,Child
+Filter}
+
+@node nth-child Selector
+@chapter @uref{https://api.jquery.com/nth-child-selector/,:nth-child() Selector}
+@anchor{#nth-child-selector}
+@findex nth-child Selector
+Selects all elements that are the nth-child of their parent.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/child-filter-selectors/,Child
+Filter}
+
+@node nth-last-child Selector
+@chapter @uref{https://api.jquery.com/nth-last-child-selector/,:nth-last-child() Selector}
+@anchor{#nth-last-child-selector}
+@findex nth-last-child Selector
+Selects all elements that are the nth-child of their parent, counting
+from the last element to the first.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/child-filter-selectors/,Child
+Filter}
+
+@node nth-last-of-type Selector
+@chapter @uref{https://api.jquery.com/nth-last-of-type-selector/,:nth-last-of-type() Selector}
+@anchor{#nth-last-of-type-selector}
+@findex nth-last-of-type Selector
+Selects all the elements that are the nth-child of their parent in
+relation to siblings with the same element name, counting from the last
+element to the first.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/child-filter-selectors/,Child
+Filter}
+
+@node nth-of-type Selector
+@chapter @uref{https://api.jquery.com/nth-of-type-selector/,:nth-of-type() Selector}
+@anchor{#nth-of-type-selector}
+@findex nth-of-type Selector
+Selects all elements that are the nth child of their parent in relation
+to siblings with the same element name.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-filter-selectors/,Basic
+Filter} | @uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node odd Selector
+@chapter @uref{https://api.jquery.com/odd-selector/,:odd Selector}
+@anchor{#odd-selector}
+@findex odd Selector
+Selects odd elements, zero-indexed. See also even.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-handler-attachment/,Event
+Handler Attachment}
+
+@node off
+@chapter @uref{https://api.jquery.com/off/,.off()}
+@anchor{#off}
+@findex off
+Remove an event handler.
+@uref{https://api.jquery.com/category/css/,CSS} |
+@uref{https://api.jquery.com/category/offset/,Offset} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/style-properties/,Style
+Properties}
+
+@node offset
+@chapter @uref{https://api.jquery.com/offset/,.offset()}
+@anchor{#offset}
+@findex offset
+Get the current coordinates of the first element, or set the coordinates
+of every element, in the set of matched elements, relative to the
+document.
+@uref{https://api.jquery.com/category/offset/,Offset} |
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/tree-traversal/,Tree
+Traversal}
+
+@node offsetParent
+@chapter @uref{https://api.jquery.com/offsetParent/,.offsetParent()}
+@anchor{#offsetparent}
+@findex offsetParent
+Get the closest ancestor element that is positioned.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-handler-attachment/,Event
+Handler Attachment}
+
+@node on
+@chapter @uref{https://api.jquery.com/on/,.on()}
+@anchor{#on}
+@findex on
+Attach an event handler function for one or more events to the selected
+elements.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-handler-attachment/,Event
+Handler Attachment}
+
+@node one
+@chapter @uref{https://api.jquery.com/one/,.one()}
+@anchor{#one}
+@findex one
+Attach a handler to an event for the elements. The handler is executed
+at most once per element per event type.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/child-filter-selectors/,Child
+Filter}
+
+@node only-child Selector
+@chapter @uref{https://api.jquery.com/only-child-selector/,:only-child Selector}
+@anchor{#only-child-selector}
+@findex only-child Selector
+Selects all elements that are the only child of their parent.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/child-filter-selectors/,Child
+Filter}
+
+@node only-of-type Selector
+@chapter @uref{https://api.jquery.com/only-of-type-selector/,:only-of-type Selector}
+@anchor{#only-of-type-selector}
+@findex only-of-type Selector
+Selects all elements that have no siblings with the same element name.
+@uref{https://api.jquery.com/category/css/,CSS} |
+@uref{https://api.jquery.com/category/dimensions/,Dimensions} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/style-properties/,Style
+Properties}
+
+@node outerHeight
+@chapter @uref{https://api.jquery.com/outerHeight/,.outerHeight()}
+@anchor{#outerheight}
+@findex outerHeight
+Get the current computed outer height (including padding, border, and
+optionally margin) for the first element in the set of matched elements
+or set the outer height of every matched element.
+@uref{https://api.jquery.com/category/css/,CSS} |
+@uref{https://api.jquery.com/category/dimensions/,Dimensions} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/style-properties/,Style
+Properties}
+
+@node outerWidth
+@chapter @uref{https://api.jquery.com/outerWidth/,.outerWidth()}
+@anchor{#outerwidth}
+@findex outerWidth
+Get the current computed outer width (including padding, border, and
+optionally margin) for the first element in the set of matched elements
+or set the outer width of every matched element.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/tree-traversal/,Tree
+Traversal}
+
+@node parent
+@chapter @uref{https://api.jquery.com/parent/,.parent()}
+@anchor{#parent}
+@findex parent
+Get the parent of each element in the current set of matched elements,
+optionally filtered by a selector.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/content-filter-selector/,Content
+Filter} | @uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node parent Selector
+@chapter @uref{https://api.jquery.com/parent-selector/,:parent Selector}
+@anchor{#parent-selector}
+@findex parent Selector
+Select all elements that have at least one child node (either an element
+or text).
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/tree-traversal/,Tree
+Traversal}
+
+@node parents
+@chapter @uref{https://api.jquery.com/parents/,.parents()}
+@anchor{#parents}
+@findex parents
+Get the ancestors of each element in the current set of matched
+elements, optionally filtered by a selector.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/tree-traversal/,Tree
+Traversal}
+
+@node parentsUntil
+@chapter @uref{https://api.jquery.com/parentsUntil/,.parentsUntil()}
+@anchor{#parentsuntil}
+@findex parentsUntil
+Get the ancestors of each element in the current set of matched
+elements, up to but not including the element matched by the selector,
+DOM node, or jQuery object.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form} |
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node password Selector
+@chapter @uref{https://api.jquery.com/password-selector/,:password Selector}
+@anchor{#password-selector}
+@findex password Selector
+Selects all elements of type password.
+@uref{https://api.jquery.com/category/css/,CSS} |
+@uref{https://api.jquery.com/category/offset/,Offset} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/style-properties/,Style
+Properties}
+
+@node position
+@chapter @uref{https://api.jquery.com/position/,.position()}
+@anchor{#position}
+@findex position
+Get the current coordinates of the first element in the set of matched
+elements, relative to the offset parent.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-inside/,DOM
+Insertion, Inside}
+
+@node prepend
+@chapter @uref{https://api.jquery.com/prepend/,.prepend()}
+@anchor{#prepend}
+@findex prepend
+Insert content, specified by the parameter, to the beginning of each
+element in the set of matched elements.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-inside/,DOM
+Insertion, Inside}
+
+@node prependTo
+@chapter @uref{https://api.jquery.com/prependTo/,.prependTo()}
+@anchor{#prependto}
+@findex prependTo
+Insert every element in the set of matched elements to the beginning of
+the target.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/tree-traversal/,Tree
+Traversal}
+
+@node prev
+@chapter @uref{https://api.jquery.com/prev/,.prev()}
+@anchor{#prev}
+@findex prev
+Get the immediately preceding sibling of each element in the set of
+matched elements. If a selector is provided, it retrieves the previous
+sibling only if it matches that selector.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/tree-traversal/,Tree
+Traversal}
+
+@node prevAll
+@chapter @uref{https://api.jquery.com/prevAll/,.prevAll()}
+@anchor{#prevall}
+@findex prevAll
+Get all preceding siblings of each element in the set of matched
+elements, optionally filtered by a selector.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/tree-traversal/,Tree
+Traversal}
+
+@node prevUntil
+@chapter @uref{https://api.jquery.com/prevUntil/,.prevUntil()}
+@anchor{#prevuntil}
+@findex prevUntil
+Get all preceding siblings of each element up to but not including the
+element matched by the selector, DOM node, or jQuery object.
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+
+@node promise
+@chapter @uref{https://api.jquery.com/promise/,.promise()}
+@anchor{#promise}
+@findex promise
+Return a Promise object to observe when all actions of a certain type
+bound to the collection, queued or not, have finished.
+@uref{https://api.jquery.com/category/attributes/,Attributes} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/general-attributes/,General
+Attributes}
+
+@node prop
+@chapter @uref{https://api.jquery.com/prop/,.prop()}
+@anchor{#prop}
+@findex prop
+Get the value of a property for the first element in the set of matched
+elements or set one or more properties for every matched element.
+@uref{https://api.jquery.com/category/internals/,Internals}
+
+@node pushStack
+@chapter @uref{https://api.jquery.com/pushStack/,.pushStack()}
+@anchor{#pushstack}
+@findex pushStack
+Add a collection of DOM elements onto the jQuery stack.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/custom-effects/,Custom} |
+@uref{https://api.jquery.com/category/data/,Data} |
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+
+@node queue
+@chapter @uref{https://api.jquery.com/queue/,.queue()}
+@anchor{#queue}
+@findex queue
+Show or manipulate the queue of functions to be executed on the matched
+elements.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form} |
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node radio Selector
+@chapter @uref{https://api.jquery.com/radio-selector/,:radio Selector}
+@anchor{#radio-selector}
+@findex radio Selector
+Selects all elements of type radio.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/document-loading/,Document
+Loading}
+
+@node ready
+@chapter @uref{https://api.jquery.com/ready/,.ready()}
+@anchor{#ready}
+@findex ready
+Specify a function to execute when the DOM is fully loaded.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-removal/,DOM
+Removal}
+
+@node remove
+@chapter @uref{https://api.jquery.com/remove/,.remove()}
+@anchor{#remove}
+@findex remove
+Remove the set of matched elements from the DOM.
+@uref{https://api.jquery.com/category/attributes/,Attributes} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/general-attributes/,General
+Attributes}
+
+@node removeAttr
+@chapter @uref{https://api.jquery.com/removeAttr/,.removeAttr()}
+@anchor{#removeattr}
+@findex removeAttr
+Remove an attribute from each element in the set of matched elements.
+@uref{https://api.jquery.com/category/attributes/,Attributes} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/class-attribute/,Class
+Attribute} | @uref{https://api.jquery.com/category/css/,CSS}
+
+@node removeClass
+@chapter @uref{https://api.jquery.com/removeClass/,.removeClass()}
+@anchor{#removeclass}
+@findex removeClass
+Remove a single class, multiple classes, or all classes from each
+element in the set of matched elements.
+@uref{https://api.jquery.com/category/data/,Data} |
+@uref{https://api.jquery.com/category/miscellaneous/,Miscellaneous} >
+@uref{https://api.jquery.com/category/miscellaneous/data-storage/,Data
+Storage}
+
+@node removeData
+@chapter @uref{https://api.jquery.com/removeData/,.removeData()}
+@anchor{#removedata}
+@findex removeData
+Remove a previously-stored piece of data.
+@uref{https://api.jquery.com/category/attributes/,Attributes} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/general-attributes/,General
+Attributes}
+
+@node removeProp
+@chapter @uref{https://api.jquery.com/removeProp/,.removeProp()}
+@anchor{#removeprop}
+@findex removeProp
+Remove a property for the set of matched elements.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-replacement/,DOM
+Replacement}
+
+@node replaceAll
+@chapter @uref{https://api.jquery.com/replaceAll/,.replaceAll()}
+@anchor{#replaceall}
+@findex replaceAll
+Replace each target element with the set of matched elements.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-replacement/,DOM
+Replacement}
+
+@node replaceWith
+@chapter @uref{https://api.jquery.com/replaceWith/,.replaceWith()}
+@anchor{#replacewith}
+@findex replaceWith
+Replace each element in the set of matched elements with the provided
+new content and return the set of elements that was removed.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form} |
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node reset Selector
+@chapter @uref{https://api.jquery.com/reset-selector/,:reset Selector}
+@anchor{#reset-selector}
+@findex reset Selector
+Selects all elements of type reset.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/browser-events/,Browser
+Events}
+
+@node resize
+@chapter @uref{https://api.jquery.com/resize/,.resize()}
+@anchor{#resize}
+@findex resize
+Bind an event handler to the “resize” JavaScript event, or trigger that
+event on an element.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-filter-selectors/,Basic
+Filter}
+
+@node root Selector
+@chapter @uref{https://api.jquery.com/root-selector/,:root Selector}
+@anchor{#root-selector}
+@findex root Selector
+Selects the element that is the root of the document.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/browser-events/,Browser
+Events}
+
+@node scroll
+@chapter @uref{https://api.jquery.com/scroll/,.scroll()}
+@anchor{#scroll}
+@findex scroll
+Bind an event handler to the “scroll” JavaScript event, or trigger that
+event on an element.
+@uref{https://api.jquery.com/category/css/,CSS} |
+@uref{https://api.jquery.com/category/offset/,Offset} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/style-properties/,Style
+Properties}
+
+@node scrollLeft
+@chapter @uref{https://api.jquery.com/scrollLeft/,.scrollLeft()}
+@anchor{#scrollleft}
+@findex scrollLeft
+Get the current horizontal position of the scroll bar for the first
+element in the set of matched elements or set the horizontal position of
+the scroll bar for every matched element.
+@uref{https://api.jquery.com/category/css/,CSS} |
+@uref{https://api.jquery.com/category/offset/,Offset} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/style-properties/,Style
+Properties}
+
+@node scrollTop
+@chapter @uref{https://api.jquery.com/scrollTop/,.scrollTop()}
+@anchor{#scrolltop}
+@findex scrollTop
+Get the current vertical position of the scroll bar for the first
+element in the set of matched elements or set the vertical position of
+the scroll bar for every matched element.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/form-events/,Form Events} |
+@uref{https://api.jquery.com/category/forms/,Forms}
+
+@node select
+@chapter @uref{https://api.jquery.com/select/,.select()}
+@anchor{#select}
+@findex select
+Bind an event handler to the “select” JavaScript event, or trigger that
+event on an element.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form} |
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node selected Selector
+@chapter @uref{https://api.jquery.com/selected-selector/,:selected Selector}
+@anchor{#selected-selector}
+@findex selected Selector
+Selects all elements that are selected.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.7/,Deprecated
+1.7} | @uref{https://api.jquery.com/category/internals/,Internals} |
+@uref{https://api.jquery.com/category/properties/,Properties} >
+@uref{https://api.jquery.com/category/properties/jquery-object-instance-properties/,Properties
+of jQuery Object Instances} |
+@uref{https://api.jquery.com/category/removed/,Removed}
+
+@node selector
+@chapter @uref{https://api.jquery.com/selector/,.selector}
+@anchor{#selector}
+@findex selector
+A selector representing selector passed to jQuery(), if any, when
+creating the original set.
+@uref{https://api.jquery.com/category/forms/,Forms} |
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/helper-functions/,Helper
+Functions}
+
+@node serialize
+@chapter @uref{https://api.jquery.com/serialize/,.serialize()}
+@anchor{#serialize}
+@findex serialize
+Encode a set of form elements as a string for submission.
+@uref{https://api.jquery.com/category/forms/,Forms} |
+@uref{https://api.jquery.com/category/ajax/,Ajax} >
+@uref{https://api.jquery.com/category/ajax/helper-functions/,Helper
+Functions}
+
+@node serializeArray
+@chapter @uref{https://api.jquery.com/serializeArray/,.serializeArray()}
+@anchor{#serializearray}
+@findex serializeArray
+Encode a set of form elements as an array of names and values.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/basics/,Basics}
+
+@node show
+@chapter @uref{https://api.jquery.com/show/,.show()}
+@anchor{#show}
+@findex show
+Display the matched elements.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/tree-traversal/,Tree
+Traversal}
+
+@node siblings
+@chapter @uref{https://api.jquery.com/siblings/,.siblings()}
+@anchor{#siblings}
+@findex siblings
+Get the siblings of each element in the set of matched elements,
+optionally filtered by a selector.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.8/,Deprecated
+1.8} |
+@uref{https://api.jquery.com/category/miscellaneous/,Miscellaneous} >
+@uref{https://api.jquery.com/category/miscellaneous/dom-element-methods/,DOM
+Element Methods} |
+@uref{https://api.jquery.com/category/removed/,Removed}
+
+@node size
+@chapter @uref{https://api.jquery.com/size/,.size()}
+@anchor{#size}
+@findex size
+Return the number of elements in the jQuery object.
+@uref{https://api.jquery.com/category/traversing/,Traversing} >
+@uref{https://api.jquery.com/category/traversing/filtering/,Filtering}
+
+@node slice
+@chapter @uref{https://api.jquery.com/slice/,.slice()}
+@anchor{#slice}
+@findex slice
+Reduce the set of matched elements to a subset specified by a range of
+indices.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/sliding/,Sliding}
+
+@node slideDown
+@chapter @uref{https://api.jquery.com/slideDown/,.slideDown()}
+@anchor{#slidedown}
+@findex slideDown
+Display the matched elements with a sliding motion.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/sliding/,Sliding}
+
+@node slideToggle
+@chapter @uref{https://api.jquery.com/slideToggle/,.slideToggle()}
+@anchor{#slidetoggle}
+@findex slideToggle
+Display or hide the matched elements with a sliding motion.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/sliding/,Sliding}
+
+@node slideUp
+@chapter @uref{https://api.jquery.com/slideUp/,.slideUp()}
+@anchor{#slideup}
+@findex slideUp
+Hide the matched elements with a sliding motion.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/custom-effects/,Custom}
+
+@node stop
+@chapter @uref{https://api.jquery.com/stop/,.stop()}
+@anchor{#stop}
+@findex stop
+Stop the currently-running animation on the matched elements.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/form-events/,Form Events} |
+@uref{https://api.jquery.com/category/forms/,Forms}
+
+@node submit
+@chapter @uref{https://api.jquery.com/submit/,.submit()}
+@anchor{#submit}
+@findex submit
+Bind an event handler to the “submit” JavaScript event, or trigger that
+event on an element.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form} |
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node submit Selector
+@chapter @uref{https://api.jquery.com/submit-selector/,:submit Selector}
+@anchor{#submit-selector}
+@findex submit Selector
+Selects all elements of type submit.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/basic-filter-selectors/,Basic
+Filter}
+
+@node target Selector
+@chapter @uref{https://api.jquery.com/target-selector/,:target Selector}
+@anchor{#target-selector}
+@findex target Selector
+Selects the target element indicated by the fragment identifier of the
+document's URI.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-inside/,DOM
+Insertion, Inside}
+
+@node text
+@chapter @uref{https://api.jquery.com/text/,.text()}
+@anchor{#text}
+@findex text
+Get the combined text contents of each element in the set of matched
+elements, including their descendants, or set the text contents of the
+matched elements.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form} |
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+
+@node text Selector
+@chapter @uref{https://api.jquery.com/text-selector/,:text Selector}
+@anchor{#text-selector}
+@findex text Selector
+Selects all input elements of type text.
+@uref{https://api.jquery.com/category/miscellaneous/,Miscellaneous} >
+@uref{https://api.jquery.com/category/miscellaneous/dom-element-methods/,DOM
+Element Methods}
+
+@node toArray
+@chapter @uref{https://api.jquery.com/toArray/,.toArray()}
+@anchor{#toarray}
+@findex toArray
+Retrieve all the elements contained in the jQuery set, as an array.
+@uref{https://api.jquery.com/category/effects/,Effects} >
+@uref{https://api.jquery.com/category/effects/basics/,Basics}
+
+@node toggle
+@chapter @uref{https://api.jquery.com/toggle/,.toggle()}
+@anchor{#toggle}
+@findex toggle
+Display or hide the matched elements.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.8/,Deprecated
+1.8} | @uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/mouse-events/,Mouse Events}
+| @uref{https://api.jquery.com/category/removed/,Removed}
+
+@node toggle 1
+@chapter @uref{https://api.jquery.com/toggle-event/,.toggle()}
+@anchor{#toggle-1}
+@findex toggle 1
+Bind two or more handlers to the matched elements, to be executed on
+alternate clicks.
+@uref{https://api.jquery.com/category/attributes/,Attributes} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/class-attribute/,Class
+Attribute} | @uref{https://api.jquery.com/category/css/,CSS}
+
+@node toggleClass
+@chapter @uref{https://api.jquery.com/toggleClass/,.toggleClass()}
+@anchor{#toggleclass}
+@findex toggleClass
+Add or remove one or more classes from each element in the set of
+matched elements, depending on either the class's presence or the value
+of the state argument.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-handler-attachment/,Event
+Handler Attachment}
+
+@node trigger
+@chapter @uref{https://api.jquery.com/trigger/,.trigger()}
+@anchor{#trigger}
+@findex trigger
+Execute all handlers and behaviors attached to the matched elements for
+the given event type.
+@uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-handler-attachment/,Event
+Handler Attachment}
+
+@node triggerHandler
+@chapter @uref{https://api.jquery.com/triggerHandler/,.triggerHandler()}
+@anchor{#triggerhandler}
+@findex triggerHandler
+Execute all handlers attached to an element for an event.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-3.0/,Deprecated
+3.0} | @uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-handler-attachment/,Event
+Handler Attachment}
+
+@node unbind
+@chapter @uref{https://api.jquery.com/unbind/,.unbind()}
+@anchor{#unbind}
+@findex unbind
+Remove a previously-attached event handler from the elements.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-3.0/,Deprecated
+3.0} | @uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/event-handler-attachment/,Event
+Handler Attachment}
+
+@node undelegate
+@chapter @uref{https://api.jquery.com/undelegate/,.undelegate()}
+@anchor{#undelegate}
+@findex undelegate
+Remove a handler from the event for all elements which match the current
+selector, based upon a specific set of root elements.
+@uref{https://api.jquery.com/category/deprecated/,Deprecated} >
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.8/,Deprecated
+1.8} | @uref{https://api.jquery.com/category/events/,Events} >
+@uref{https://api.jquery.com/category/events/document-loading/,Document
+Loading} | @uref{https://api.jquery.com/category/removed/,Removed}
+
+@node unload
+@chapter @uref{https://api.jquery.com/unload/,.unload()}
+@anchor{#unload}
+@findex unload
+Bind an event handler to the “unload” JavaScript event.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-around/,DOM
+Insertion, Around} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-removal/,DOM
+Removal}
+
+@node unwrap
+@chapter @uref{https://api.jquery.com/unwrap/,.unwrap()}
+@anchor{#unwrap}
+@findex unwrap
+Remove the parents of the set of matched elements from the DOM, leaving
+the matched elements in their place.
+@uref{https://api.jquery.com/category/attributes/,Attributes} |
+@uref{https://api.jquery.com/category/forms/,Forms} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/general-attributes/,General
+Attributes}
+
+@node val
+@chapter @uref{https://api.jquery.com/val/,.val()}
+@anchor{#val}
+@findex val
+Get the current value of the first element in the set of matched
+elements or set the value of every matched element.
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions} |
+@uref{https://api.jquery.com/category/selectors/,Selectors} >
+@uref{https://api.jquery.com/category/selectors/visibility-filter-selectors/,Visibility
+Filter}
+
+@node visible Selector
+@chapter @uref{https://api.jquery.com/visible-selector/,:visible Selector}
+@anchor{#visible-selector}
+@findex visible Selector
+Selects all elements that are visible.
+@uref{https://api.jquery.com/category/css/,CSS} |
+@uref{https://api.jquery.com/category/dimensions/,Dimensions} |
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/style-properties/,Style
+Properties}
+
+@node width
+@chapter @uref{https://api.jquery.com/width/,.width()}
+@anchor{#width}
+@findex width
+Get the current computed width for the first element in the set of
+matched elements or set the width of every matched element.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-around/,DOM
+Insertion, Around}
+
+@node wrap
+@chapter @uref{https://api.jquery.com/wrap/,.wrap()}
+@anchor{#wrap}
+@findex wrap
+Wrap an HTML structure around each element in the set of matched
+elements.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-around/,DOM
+Insertion, Around}
+
+@node wrapAll
+@chapter @uref{https://api.jquery.com/wrapAll/,.wrapAll()}
+@anchor{#wrapall}
+@findex wrapAll
+Wrap an HTML structure around all elements in the set of matched
+elements.
+@uref{https://api.jquery.com/category/manipulation/,Manipulation} >
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-around/,DOM
+Insertion, Around}
+
+@node wrapInner
+@chapter @uref{https://api.jquery.com/wrapInner/,.wrapInner()}
+@anchor{#wrapinner}
+@findex wrapInner
+Wrap an HTML structure around the content of each element in the set of
+matched elements.
+@itemize
+@item
+@uref{https://api.jquery.com/category/ajax/,Ajax}
+@itemize
+@item
+@uref{https://api.jquery.com/category/ajax/global-ajax-event-handlers/,Global
+Ajax Event Handlers}
+@item
+@uref{https://api.jquery.com/category/ajax/helper-functions/,Helper
+Functions}
+@item
+@uref{https://api.jquery.com/category/ajax/low-level-interface/,Low-Level
+Interface}
+@item
+@uref{https://api.jquery.com/category/ajax/shorthand-methods/,Shorthand
+Methods}
+@end itemize
+
+@item
+@uref{https://api.jquery.com/category/attributes/,Attributes}
+@item
+@uref{https://api.jquery.com/category/callbacks-object/,Callbacks
+Object}
+@item
+@uref{https://api.jquery.com/category/core/,Core}
+@item
+@uref{https://api.jquery.com/category/css/,CSS}
+@item
+@uref{https://api.jquery.com/category/data/,Data}
+@item
+@uref{https://api.jquery.com/category/deferred-object/,Deferred Object}
+@item
+@uref{https://api.jquery.com/category/deprecated/,Deprecated}
+@itemize
+@item
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.3/,Deprecated
+1.3}
+@item
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.7/,Deprecated
+1.7}
+@item
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.8/,Deprecated
+1.8}
+@item
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.9/,Deprecated
+1.9}
+@item
+@uref{https://api.jquery.com/category/deprecated/deprecated-1.10/,Deprecated
+1.10}
+@item
+@uref{https://api.jquery.com/category/deprecated/deprecated-3.0/,Deprecated
+3.0}
+@item
+@uref{https://api.jquery.com/category/deprecated/deprecated-3.3/,Deprecated
+3.3}
+@end itemize
+
+@item
+@uref{https://api.jquery.com/category/dimensions/,Dimensions}
+@item
+@uref{https://api.jquery.com/category/effects/,Effects}
+@itemize
+@item
+@uref{https://api.jquery.com/category/effects/basics/,Basics}
+@item
+@uref{https://api.jquery.com/category/effects/custom-effects/,Custom}
+@item
+@uref{https://api.jquery.com/category/effects/fading/,Fading}
+@item
+@uref{https://api.jquery.com/category/effects/sliding/,Sliding}
+@end itemize
+
+@item
+@uref{https://api.jquery.com/category/events/,Events}
+@itemize
+@item
+@uref{https://api.jquery.com/category/events/browser-events/,Browser
+Events}
+@item
+@uref{https://api.jquery.com/category/events/document-loading/,Document
+Loading}
+@item
+@uref{https://api.jquery.com/category/events/event-handler-attachment/,Event
+Handler Attachment}
+@item
+@uref{https://api.jquery.com/category/events/event-object/,Event Object}
+@item
+@uref{https://api.jquery.com/category/events/form-events/,Form Events}
+@item
+@uref{https://api.jquery.com/category/events/keyboard-events/,Keyboard
+Events}
+@item
+@uref{https://api.jquery.com/category/events/mouse-events/,Mouse Events}
+@end itemize
+
+@item
+@uref{https://api.jquery.com/category/forms/,Forms}
+@item
+@uref{https://api.jquery.com/category/internals/,Internals}
+@item
+@uref{https://api.jquery.com/category/manipulation/,Manipulation}
+@itemize
+@item
+@uref{https://api.jquery.com/category/manipulation/class-attribute/,Class
+Attribute}
+@item
+@uref{https://api.jquery.com/category/manipulation/copying/,Copying}
+@item
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-around/,DOM
+Insertion, Around}
+@item
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-inside/,DOM
+Insertion, Inside}
+@item
+@uref{https://api.jquery.com/category/manipulation/dom-insertion-outside/,DOM
+Insertion, Outside}
+@item
+@uref{https://api.jquery.com/category/manipulation/dom-removal/,DOM
+Removal}
+@item
+@uref{https://api.jquery.com/category/manipulation/dom-replacement/,DOM
+Replacement}
+@item
+@uref{https://api.jquery.com/category/manipulation/general-attributes/,General
+Attributes}
+@item
+@uref{https://api.jquery.com/category/manipulation/style-properties/,Style
+Properties}
+@end itemize
+
+@item
+@uref{https://api.jquery.com/category/miscellaneous/,Miscellaneous}
+@itemize
+@item
+@uref{https://api.jquery.com/category/miscellaneous/collection-manipulation/,Collection
+Manipulation}
+@item
+@uref{https://api.jquery.com/category/miscellaneous/data-storage/,Data
+Storage}
+@item
+@uref{https://api.jquery.com/category/miscellaneous/dom-element-methods/,DOM
+Element Methods}
+@item
+@uref{https://api.jquery.com/category/miscellaneous/setup-methods/,Setup
+Methods}
+@end itemize
+
+@item
+@uref{https://api.jquery.com/category/offset/,Offset}
+@item
+@uref{https://api.jquery.com/category/properties/,Properties}
+@itemize
+@item
+@uref{https://api.jquery.com/category/properties/jquery-object-instance-properties/,Properties
+of jQuery Object Instances}
+@item
+@uref{https://api.jquery.com/category/properties/global-jquery-object-properties/,Properties
+of the Global jQuery Object}
+@end itemize
+
+@item
+@uref{https://api.jquery.com/category/removed/,Removed}
+@item
+@uref{https://api.jquery.com/category/selectors/,Selectors}
+@itemize
+@item
+@uref{https://api.jquery.com/category/selectors/attribute-selectors/,Attribute}
+@item
+@uref{https://api.jquery.com/category/selectors/basic-css-selectors/,Basic}
+@item
+@uref{https://api.jquery.com/category/selectors/basic-filter-selectors/,Basic
+Filter}
+@item
+@uref{https://api.jquery.com/category/selectors/child-filter-selectors/,Child
+Filter}
+@item
+@uref{https://api.jquery.com/category/selectors/content-filter-selector/,Content
+Filter}
+@item
+@uref{https://api.jquery.com/category/selectors/form-selectors/,Form}
+@item
+@uref{https://api.jquery.com/category/selectors/hierarchy-selectors/,Hierarchy}
+@item
+@uref{https://api.jquery.com/category/selectors/jquery-selector-extensions/,jQuery
+Extensions}
+@item
+@uref{https://api.jquery.com/category/selectors/visibility-filter-selectors/,Visibility
+Filter}
+@end itemize
+
+@item
+@uref{https://api.jquery.com/category/traversing/,Traversing}
+@itemize
+@item
+@uref{https://api.jquery.com/category/traversing/filtering/,Filtering}
+@item
+@uref{https://api.jquery.com/category/traversing/miscellaneous-traversal/,Miscellaneous
+Traversing}
+@item
+@uref{https://api.jquery.com/category/traversing/tree-traversal/,Tree
+Traversal}
+@end itemize
+
+@item
+@uref{https://api.jquery.com/category/utilities/,Utilities}
+@item
+@uref{https://api.jquery.com/category/version/,Version}
+@itemize
+@item
+@uref{https://api.jquery.com/category/version/1.0/,Version 1.0}
+@item
+@uref{https://api.jquery.com/category/version/1.0.4/,Version 1.0.4}
+@item
+@uref{https://api.jquery.com/category/version/1.1/,Version 1.1}
+@item
+@uref{https://api.jquery.com/category/version/1.1.2/,Version 1.1.2}
+@item
+@uref{https://api.jquery.com/category/version/1.1.3/,Version 1.1.3}
+@item
+@uref{https://api.jquery.com/category/version/1.1.4/,Version 1.1.4}
+@item
+@uref{https://api.jquery.com/category/version/1.2/,Version 1.2}
+@item
+@uref{https://api.jquery.com/category/version/1.2.3/,Version 1.2.3}
+@item
+@uref{https://api.jquery.com/category/version/1.2.6/,Version 1.2.6}
+@item
+@uref{https://api.jquery.com/category/version/1.3/,Version 1.3}
+@item
+@uref{https://api.jquery.com/category/version/1.4/,Version 1.4}
+@item
+@uref{https://api.jquery.com/category/version/1.4.1/,Version 1.4.1}
+@item
+@uref{https://api.jquery.com/category/version/1.4.2/,Version 1.4.2}
+@item
+@uref{https://api.jquery.com/category/version/1.4.3/,Version 1.4.3}
+@item
+@uref{https://api.jquery.com/category/version/1.4.4/,Version 1.4.4}
+@item
+@uref{https://api.jquery.com/category/version/1.5/,Version 1.5}
+@item
+@uref{https://api.jquery.com/category/version/1.5.1/,Version 1.5.1}
+@item
+@uref{https://api.jquery.com/category/version/1.6/,Version 1.6}
+@item
+@uref{https://api.jquery.com/category/version/1.7/,Version 1.7}
+@item
+@uref{https://api.jquery.com/category/version/1.8/,Version 1.8}
+@item
+@uref{https://api.jquery.com/category/version/1.9/,Version 1.9}
+@item
+@uref{https://api.jquery.com/category/version/1.12-2.2/,Version 1.12 &
+2.2}
+@item
+@uref{https://api.jquery.com/category/version/3.0/,Version 3.0}
+@item
+@uref{https://api.jquery.com/category/version/3.1/,Version 3.1}
+@end itemize
+
+@end itemize
+
+@node Books
+@section Books
+@anchor{#books}
+@itemize
+@item
+@uref{https://www.packtpub.com/web-development/learning-jquery-fourth-edition,@image{./jQuery API Documentation_files/learning-jquery-4th-ed,0.95833in,1.1875in,Learning
+jQuery 4th Edition by Karl Swedberg and Jonathan Chaffer,jpg} Learning
+jQuery Fourth Edition Karl Swedberg and Jonathan Chaffer}
+@item
+@uref{https://www.manning.com/books/jquery-in-action-third-edition,@image{./jQuery API Documentation_files/jquery-in-action,0.95833in,1.1875in,jQuery
+in Action by Bear Bibeault, Yehuda Katz, and Aurelio De Rosa,jpg} jQuery
+in Action Bear Bibeault, Yehuda Katz, and Aurelio De Rosa}
+@item
+@uref{https://www.syncfusion.com/ebooks/jquery,@image{./jQuery API Documentation_files/jquery-succinctly,0.95833in,1.1875in,jQuery
+Succinctly by Cody Lindley,jpg} jQuery Succinctly Cody Lindley}
+@end itemize
+
+@itemize
+@item
+@uref{https://learn.jquery.com/,Learning Center}
+@item
+@uref{https://forum.jquery.com/,Forum}
+@item
+@uref{https://api.jquery.com/,API}
+@item
+@uref{https://twitter.com/jquery,Twitter}
+@item
+@uref{https://irc.jquery.org/,IRC}
+@item
+@uref{https://github.com/jquery,GitHub}
+@end itemize
+
+Copyright 2019 @uref{https://jquery.org/team/,The jQuery Foundation}.
+@uref{https://jquery.org/license/,jQuery License}
+@uref{https://www.digitalocean.com/,Web hosting by Digital Ocean} |
+@uref{https://www.stackpath.com/,CDN by StackPath}
+
+@node Function Index
+@unnumbered Function Index
+
+@printindex fn
+
+@bye
