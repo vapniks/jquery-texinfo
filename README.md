@@ -3,7 +3,7 @@ texinfo &amp; info documentation files for jQuery API
 
 To recreate the info file from the texinfo file:
 
-makinfo jquery.texinfo
-sudo cp jquery.info /usr/share/info/
-cd /usr/share/info/
-sudo install-info jquery.info dir
+ 1. makinfo jquery.texinfo
+ 2. sudo cp jquery.info /usr/share/info/
+ 3. cd /usr/share/info/
+ 4. sudo install-info jquery.info dir
