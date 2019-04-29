@@ -1,0 +1,613 @@
+This is puppeteer.info, produced by makeinfo version 6.5 from
+puppeteer.texinfo.
+
+INFO-DIR-SECTION Programming
+START-INFO-DIR-ENTRY
+* Puppeteer: (puppeteer)Top.
+END-INFO-DIR-ENTRY
+
+
+Indirect:
+puppeteer.info-1: 181
+puppeteer.info-2: 300213
+
+Tag Table:
+(Indirect)
+Node: Top181
+Node: Puppeteer API Tip-Of-Tree313
+Ref: #puppeteer-api-tip-of-tree461
+Node: Overview2128
+Ref: #overview2264
+Node: puppeteer vs puppeteer-core3898
+Ref: #puppeteer-vs-puppeteer-core4102
+Node: Environment Variables6060
+Ref: #environment-variables6274
+Node: Working with Chrome Extensions8088
+Ref: #working-with-chrome-extensions8308
+Node: class Puppeteer9335
+Ref: #class-puppeteer9526
+Node: puppeteerconnectoptions10103
+Ref: #puppeteerconnectoptions10295
+Node: puppeteercreateBrowserFetcher[options]13648
+Ref: #puppeteercreatebrowserfetcheroptions13908
+Node: puppeteerdefaultArgs[options]14866
+Ref: #puppeteerdefaultargsoptions15101
+Node: puppeteerdevices16919
+Ref: #puppeteerdevices17101
+Node: puppeteererrors17902
+Ref: #puppeteererrors18076
+Node: puppeteerexecutablePath19125
+Ref: #puppeteerexecutablepath19327
+Node: puppeteerlaunch[options]19887
+Ref: #puppeteerlaunchoptions20067
+Node: class BrowserFetcher28120
+Ref: #class-browserfetcher28304
+Node: browserFetchercanDownloadrevision29290
+Ref: #browserfetchercandownloadrevision29528
+Node: browserFetcherdownloadrevision[ progressCallback]30064
+Ref: #browserfetcherdownloadrevision-progresscallback30373
+Node: browserFetcherlocalRevisions32289
+Ref: #browserfetcherlocalrevisions32543
+Node: browserFetcherplatform32922
+Ref: #browserfetcherplatform33143
+Node: browserFetcherremoverevision33324
+Ref: #browserfetcherremoverevision33563
+Node: browserFetcherrevisionInforevision33954
+Ref: #browserfetcherrevisioninforevision34174
+Node: class Browser35362
+Ref: #class-browser35537
+Node: event ‘disconnected'37097
+Ref: #event-disconnected37265
+Node: event ‘targetchanged'37494
+Ref: #event-targetchanged37696
+Node: event ‘targetcreated'37851
+Ref: #event-targetcreated38056
+Node: event ‘targetdestroyed'38381
+Ref: #event-targetdestroyed38589
+Node: browserbrowserContexts38783
+Ref: #browserbrowsercontexts38978
+Node: browserclose39308
+Ref: #browserclose39494
+Node: browsercreateIncognitoBrowserContext39784
+Ref: #browsercreateincognitobrowsercontext40024
+Node: browserdefaultBrowserContext40586
+Ref: #browserdefaultbrowsercontext40815
+Node: browserdisconnect40965
+Ref: #browserdisconnect41150
+Node: browsernewPage41358
+Ref: #browsernewpage41523
+Node: browserpages41814
+Ref: #browserpages41972
+Node: browserprocess42591
+Ref: #browserprocess42752
+Node: browsertarget42995
+Ref: #browsertarget43156
+Node: browsertargets43243
+Ref: #browsertargets43408
+Node: browseruserAgent43731
+Ref: #browseruseragent43901
+Node: browserversion44305
+Ref: #browserversion44496
+Node: browserwaitForTargetpredicate[ options]44970
+Ref: #browserwaitfortargetpredicate-options45214
+Node: browserwsEndpoint46456
+Ref: #browserwsendpoint46631
+Node: class BrowserContext47256
+Ref: #class-browsercontext47435
+Node: event ‘targetchanged' 148829
+Ref: #event-targetchanged-149015
+Node: event ‘targetcreated' 149124
+Ref: #event-targetcreated-149346
+Node: event ‘targetdestroyed' 149636
+Ref: #event-targetdestroyed-149858
+Node: browserContextbrowser49996
+Ref: #browsercontextbrowser50223
+Node: browserContextclearPermissionOverrides50319
+Ref: #browsercontextclearpermissionoverrides50572
+Node: browserContextclose50926
+Ref: #browsercontextclose51145
+Node: browserContextisIncognito51425
+Ref: #browsercontextisincognito51639
+Node: browserContextnewPage51935
+Ref: #browsercontextnewpage52173
+Node: browserContextoverridePermissionsorigin permissions52371
+Ref: #browsercontextoverridepermissionsorigin-permissions52665
+Node: browserContextpages54126
+Ref: #browsercontextpages54356
+Node: browserContexttargets54868
+Ref: #browsercontexttargets55097
+Node: browserContextwaitForTargetpredicate[ options]55311
+Ref: #browsercontextwaitfortargetpredicate-options55564
+Node: class Page56822
+Ref: #class-page56980
+Node: event ‘close'60721
+Ref: #event-close60859
+Node: event ‘console'60890
+Ref: #event-console61057
+Node: event ‘dialog'61602
+Ref: #event-dialog61778
+Node: event ‘domcontentloaded'62088
+Ref: #event-domcontentloaded62282
+Node: event ‘error'62426
+Ref: #event-error62605
+Node: event ‘frameattached'62868
+Ref: #event-frameattached63060
+Node: event ‘framedetached'63132
+Ref: #event-framedetached63333
+Node: event ‘framenavigated'63405
+Ref: #event-framenavigated63599
+Node: event ‘load'63685
+Ref: #event-load63853
+Node: event ‘metrics'63973
+Ref: #event-metrics64144
+Node: event ‘pageerror'64915
+Ref: #event-pageerror65091
+Node: event ‘popup'65251
+Ref: #event-popup65419
+Node: event ‘request'65830
+Ref: #event-request66006
+Node: event ‘requestfailed'66226
+Ref: #event-requestfailed66424
+Node: event ‘requestfinished'66523
+Ref: #event-requestfinished66726
+Node: event ‘response'66814
+Ref: #event-response67003
+Node: event ‘workercreated'67108
+Ref: #event-workercreated67307
+Node: event ‘workerdestroyed'67473
+Ref: #event-workerdestroyed67671
+Node: page$selector67828
+Ref: #pageselector67997
+Node: page$$selector68608
+Ref: #pageselector-168794
+Node: page$$evalselector pageFunction[...args]69508
+Ref: #pageevalselector-pagefunction-args69776
+Node: page$evalselector pageFunction[...args]71359
+Ref: #pageevalselector-pagefunction-args-171627
+Node: page$xexpression73393
+Ref: #pagexexpression73588
+Node: pageaccessibility74204
+Ref: #pageaccessibility74381
+Node: pageaddScriptTagoptions74443
+Ref: #pageaddscripttagoptions74642
+Node: pageaddStyleTagoptions76298
+Ref: #pageaddstyletagoptions76505
+Node: pageauthenticatecredentials77868
+Ref: #pageauthenticatecredentials78078
+Node: pagebringToFront78754
+Ref: #pagebringtofront78931
+Node: pagebrowser79093
+Ref: #pagebrowser79251
+Node: pagebrowserContext79339
+Ref: #pagebrowsercontext79522
+Node: pageclickselector[ options]79637
+Ref: #pageclickselector-options79847
+Node: pageclose[options]81928
+Ref: #pagecloseoptions82111
+Node: pagecontent82941
+Ref: #pagecontent83103
+Node: pagecookies[...urls]83390
+Ref: #pagecookiesurls83564
+Node: pagecoverage85418
+Ref: #pagecoverage85587
+Node: pagedeleteCookie...cookies85639
+Ref: #pagedeletecookiecookies85838
+Node: pageemulateoptions86627
+Ref: #pageemulateoptions86823
+Node: pageemulateMediamediaType89599
+Ref: #pageemulatemediamediatype89816
+Node: pageevaluatepageFunction[...args]90239
+Ref: #pageevaluatepagefunction-args90495
+Node: pageevaluateHandlepageFunction[...args]92702
+Ref: #pageevaluatehandlepagefunction-args92991
+Node: pageevaluateOnNewDocumentpageFunction[...args]94773
+Ref: #pageevaluateonnewdocumentpagefunction-args95083
+Node: pageexposeFunctionname puppeteerFunction96578
+Ref: #pageexposefunctionname-puppeteerfunction96854
+Node: pagefocusselector99294
+Ref: #pagefocusselector99486
+Node: pageframes100338
+Ref: #pageframes100495
+Node: pagegoBack[options]100692
+Ref: #pagegobackoptions100872
+Node: pagegoForward[options]103199
+Ref: #pagegoforwardoptions103396
+Node: pagegotourl[ options]105722
+Ref: #pagegotourl-options105917
+Node: pagehoverselector109395
+Ref: #pagehoverselector109570
+Node: pageisClosed110526
+Ref: #pageisclosed110682
+Node: pagekeyboard110843
+Ref: #pagekeyboard110991
+Node: pagemainFrame111043
+Ref: #pagemainframe111196
+Node: pagemetrics111343
+Ref: #pagemetrics111489
+Node: pagemouse114313
+Ref: #pagemouse114454
+Node: pagepdf[options]114500
+Ref: #pagepdfoptions114679
+Node: pagequeryObjectsprototypeHandle121828
+Ref: #pagequeryobjectsprototypehandle122047
+Node: pagereload[options]123080
+Ref: #pagereloadoptions123282
+Node: pagescreenshot[options]125515
+Ref: #pagescreenshotoptions125721
+Node: pageselectselector...values129150
+Ref: #pageselectselector-values129370
+Node: pagesetBypassCSPenabled130701
+Ref: #pagesetbypasscspenabled130916
+Node: pagesetCacheEnabled[enabled]131481
+Ref: #pagesetcacheenabledenabled131707
+Node: pagesetContenthtml[ options]132103
+Ref: #pagesetcontenthtml-options132331
+Node: pagesetCookie...cookies134548
+Ref: #pagesetcookiecookies134774
+Node: pagesetDefaultNavigationTimeouttimeout136247
+Ref: #pagesetdefaultnavigationtimeouttimeout136503
+Node: pagesetDefaultTimeouttimeout137320
+Ref: #pagesetdefaulttimeouttimeout137563
+Node: pagesetExtraHTTPHeadersheaders138900
+Ref: #pagesetextrahttpheadersheaders139134
+Node: pagesetGeolocationoptions139689
+Ref: #pagesetgeolocationoptions139916
+Node: pagesetJavaScriptEnabledenabled140984
+Ref: #pagesetjavascriptenabledenabled141218
+Node: pagesetOfflineModeenabled141690
+Ref: #pagesetofflinemodeenabled141918
+Node: pagesetRequestInterceptionvalue142221
+Ref: #pagesetrequestinterceptionvalue142455
+Node: pagesetUserAgentuserAgent143665
+Ref: #pagesetuseragentuseragent143885
+Node: pagesetViewportviewport144232
+Ref: #pagesetviewportviewport144432
+Node: pagetapselector146188
+Ref: #pagetapselector146357
+Node: pagetarget147138
+Ref: #pagetarget147283
+Node: pagetitle147373
+Ref: #pagetitle147516
+Node: pagetouchscreen147822
+Ref: #pagetouchscreen147974
+Node: pagetracing148032
+Ref: #pagetracing148198
+Node: pagetypeselector text[ options]148248
+Ref: #pagetypeselector-text-options148454
+Node: pageurl149865
+Ref: #pageurl150020
+Node: pageviewport150202
+Ref: #pageviewport150393
+Node: pagewaitForselectorOrFunctionOrTimeout[ options[...args]]151764
+Ref: #pagewaitforselectororfunctionortimeout-options-args152092
+Node: pagewaitForFunctionpageFunction[ options[...args]]154673
+Ref: #pagewaitforfunctionpagefunction-options-args155005
+Node: pagewaitForNavigation[options]157990
+Ref: #pagewaitfornavigationoptions158263
+Node: pagewaitForRequesturlOrPredicate[ options]161259
+Ref: #pagewaitforrequesturlorpredicate-options161551
+Node: pagewaitForResponseurlOrPredicate[ options]162821
+Ref: #pagewaitforresponseurlorpredicate-options163122
+Node: pagewaitForSelectorselector[ options]164402
+Ref: #pagewaitforselectorselector-options164680
+Node: pagewaitForXPathxpath[ options]167315
+Ref: #pagewaitforxpathxpath-options167549
+Node: pageworkers170127
+Ref: #pageworkers170273
+Node: class Worker170637
+Ref: #class-worker170800
+Node: workerevaluatepageFunction[...args]171446
+Ref: #workerevaluatepagefunction-args171678
+Node: workerevaluateHandlepageFunction[...args]173325
+Ref: #workerevaluatehandlepagefunction-args173600
+Node: workerexecutionContext174924
+Ref: #workerexecutioncontext175133
+Node: workerurl175311
+Ref: #workerurl175444
+Node: class Accessibility175561
+Ref: #class-accessibility175742
+Node: accessibilitysnapshot[options]176638
+Ref: #accessibilitysnapshotoptions176810
+Node: class Keyboard183508
+Ref: #class-keyboard183678
+Node: keyboarddownkey[ options]185034
+Ref: #keyboarddownkey-options185223
+Node: keyboardpresskey[ options]186813
+Ref: #keyboardpresskey-options187038
+Node: keyboardsendCharacterchar188436
+Ref: #keyboardsendcharacterchar188658
+Node: keyboardtypetext[ options]189223
+Ref: #keyboardtypetext-options189436
+Node: keyboardupkey190543
+Ref: #keyboardupkey190694
+Node: class Mouse191106
+Ref: #class-mouse191268
+Node: mouseclickx y[ options]191828
+Ref: #mouseclickx-y-options192002
+Node: mousedown[options]193208
+Ref: #mousedownoptions193399
+Node: mousemovex y[ options]194028
+Ref: #mousemovex-y-options194224
+Node: mouseup[options]194938
+Ref: #mouseupoptions195091
+Node: class Touchscreen195718
+Ref: #class-touchscreen195891
+Node: touchscreentapx y195923
+Ref: #touchscreentapx-y196056
+Node: class Tracing196466
+Ref: #class-tracing196632
+Node: tracingstartoptions197041
+Ref: #tracingstartoptions197194
+Node: tracingstop198154
+Ref: #tracingstop198291
+Node: class Dialog198539
+Ref: #class-dialog198706
+Node: dialogaccept[promptText]199269
+Ref: #dialogacceptprompttext199443
+Node: dialogdefaultValue199862
+Ref: #dialogdefaultvalue200046
+Node: dialogdismiss200258
+Ref: #dialogdismiss200421
+Node: dialogmessage200608
+Ref: #dialogmessage200763
+Node: dialogtype200920
+Ref: #dialogtype201047
+Node: class ConsoleMessage201269
+Ref: #class-consolemessage201450
+Node: consoleMessageargs201685
+Ref: #consolemessageargs201853
+Node: consoleMessagelocation202011
+Ref: #consolemessagelocation202214
+Node: consoleMessagetext202993
+Ref: #consolemessagetext203188
+Node: consoleMessagetype203305
+Ref: #consolemessagetype203469
+Node: class Frame203916
+Ref: #class-frame204089
+Node: frame$selector206399
+Ref: #frameselector206539
+Node: frame$$selector207151
+Ref: #frameselector-1207343
+Node: frame$$evalselector pageFunction[...args]208068
+Ref: #frameevalselector-pagefunction-args208342
+Node: frame$evalselector pageFunction[...args]209929
+Ref: #frameevalselector-pagefunction-args-1210203
+Node: frame$xexpression211884
+Ref: #framexexpression212091
+Node: frameaddScriptTagoptions212635
+Ref: #frameaddscripttagoptions212839
+Node: frameaddStyleTagoptions214408
+Ref: #frameaddstyletagoptions214609
+Node: framechildFrames215887
+Ref: #framechildframes216078
+Node: frameclickselector[ options]216230
+Ref: #frameclickselector-options216436
+Node: framecontent218435
+Ref: #framecontent218627
+Node: frameevaluatepageFunction[...args]218915
+Ref: #frameevaluatepagefunction-args219165
+Node: frameevaluateHandlepageFunction[...args]221168
+Ref: #frameevaluatehandlepagefunction-args221439
+Node: frameexecutionContext223228
+Ref: #frameexecutioncontext223443
+Node: framefocusselector223696
+Ref: #framefocusselector223887
+Node: framegotourl[ options]224664
+Ref: #framegotourl-options224862
+Node: framehoverselector228275
+Ref: #framehoverselector228460
+Node: frameisDetached229341
+Ref: #frameisdetached229507
+Node: framename229704
+Ref: #framename229856
+Node: frameparentFrame230219
+Ref: #frameparentframe230398
+Node: frameselectselector...values230523
+Ref: #frameselectselector-values230748
+Node: framesetContenthtml[ options]232006
+Ref: #framesetcontenthtml-options232233
+Node: frametapselector234450
+Ref: #frametapselector234631
+Node: frametitle235341
+Ref: #frametitle235513
+Node: frametypeselector text[ options]235760
+Ref: #frametypeselector-text-options235972
+Node: frameurl237289
+Ref: #frameurl237497
+Node: framewaitForselectorOrFunctionOrTimeout[ options[...args]]237638
+Ref: #framewaitforselectororfunctionortimeout-options-args237969
+Node: framewaitForFunctionpageFunction[ options[...args]]240414
+Ref: #framewaitforfunctionpagefunction-options-args240754
+Node: framewaitForNavigation[options]243617
+Ref: #framewaitfornavigationoptions243893
+Node: framewaitForSelectorselector[ options]246794
+Ref: #framewaitforselectorselector-options247067
+Node: framewaitForXPathxpath[ options]249611
+Ref: #framewaitforxpathxpath-options249832
+Node: class ExecutionContext252331
+Ref: #class-executioncontext252520
+Node: executionContextevaluatepageFunction[...args]253346
+Ref: #executioncontextevaluatepagefunction-args253628
+Node: executionContextevaluateHandlepageFunction[...args]255926
+Ref: #executioncontextevaluatehandlepagefunction-args256250
+Node: executionContextframe258215
+Ref: #executioncontextframe258475
+Node: executionContextqueryObjectsprototypeHandle258750
+Ref: #executioncontextqueryobjectsprototypehandle258994
+Node: class JSHandle259867
+Ref: #class-jshandle260048
+Node: jsHandleasElement260934
+Ref: #jshandleaselement261086
+Node: jsHandledispose261287
+Ref: #jshandledispose261468
+Node: jsHandleexecutionContext261746
+Ref: #jshandleexecutioncontext261949
+Node: jsHandlegetProperties262067
+Ref: #jshandlegetproperties262280
+Node: jsHandlegetPropertypropertyName262982
+Ref: #jshandlegetpropertypropertyname263208
+Node: jsHandlejsonValue263572
+Ref: #jshandlejsonvalue263740
+Node: class ElementHandle264374
+Ref: #class-elementhandle264556
+Node: elementHandle$selector266153
+Ref: #elementhandleselector266333
+Node: elementHandle$$selector266880
+Ref: #elementhandleselector-1267120
+Node: elementHandle$$evalselector pageFunction[...args]267767
+Ref: #elementhandleevalselector-pagefunction-args268089
+Node: elementHandle$evalselector pageFunction[...args]269908
+Ref: #elementhandleevalselector-pagefunction-args-1270230
+Node: elementHandle$xexpression271905
+Ref: #elementhandlexexpression272150
+Node: elementHandleasElement272798
+Ref: #elementhandleaselement273013
+Node: elementHandleboundingBox273075
+Ref: #elementhandleboundingbox273290
+Node: elementHandleboxModel274329
+Ref: #elementhandleboxmodel274543
+Node: elementHandleclick[options]277347
+Ref: #elementhandleclickoptions277574
+Node: elementHandlecontentFrame278736
+Ref: #elementhandlecontentframe278960
+Node: elementHandledispose279216
+Ref: #elementhandledispose279432
+Node: elementHandleexecutionContext279716
+Ref: #elementhandleexecutioncontext279943
+Node: elementHandlefocus280011
+Ref: #elementhandlefocus280222
+Node: elementHandlegetProperties280443
+Ref: #elementhandlegetproperties280677
+Node: elementHandlegetPropertypropertyName281486
+Ref: #elementhandlegetpropertypropertyname281740
+Node: elementHandlehover282099
+Ref: #elementhandlehover282326
+Node: elementHandleisIntersectingViewport282720
+Ref: #elementhandleisintersectingviewport282967
+Node: elementHandlejsonValue283264
+Ref: #elementhandlejsonvalue283498
+Node: elementHandlepresskey[ options]284172
+Ref: #elementhandlepresskey-options284423
+Node: elementHandlescreenshot[options]285852
+Ref: #elementhandlescreenshotoptions286097
+Node: elementHandletap286937
+Ref: #elementhandletap287140
+Node: elementHandletoString287606
+Ref: #elementhandletostring287818
+Node: elementHandletypetext[ options]287935
+Ref: #elementhandletypetext-options288188
+Node: elementHandleuploadFile...filePaths289395
+Ref: #elementhandleuploadfilefilepaths289624
+Node: class Request290251
+Ref: #class-request290421
+Node: requestabort[errorCode]291530
+Ref: #requestaborterrorcode291710
+Node: requestcontinue[overrides]293644
+Ref: #requestcontinueoverrides293853
+Node: requestfailure295582
+Ref: #requestfailure295756
+Node: requestframe296383
+Ref: #requestframe296541
+Node: requestheaders296700
+Ref: #requestheaders296874
+Node: requestisNavigationRequest297096
+Ref: #requestisnavigationrequest297295
+Node: requestmethod297469
+Ref: #requestmethod297643
+Node: requestpostData297802
+Ref: #requestpostdata297974
+Node: requestredirectChain298127
+Ref: #requestredirectchain298315
+Node: requestresourceType299399
+Ref: #requestresourcetype299594
+Node: requestrespondresponse300213
+Ref: #requestrespondresponse300409
+Node: requestresponse302066
+Ref: #requestresponse302239
+Node: requesturl302411
+Ref: #requesturl302543
+Node: class Response302685
+Ref: #class-response302859
+Node: responsebuffer303248
+Ref: #responsebuffer303389
+Node: responseframe303546
+Ref: #responseframe303711
+Node: responsefromCache303871
+Ref: #responsefromcache304055
+Node: responsefromServiceWorker304263
+Ref: #responsefromserviceworker304465
+Node: responseheaders304638
+Ref: #responseheaders304815
+Node: responsejson305038
+Ref: #responsejson305194
+Node: responseok305478
+Ref: #responseok305636
+Node: responseremoteAddress305857
+Ref: #responseremoteaddress306040
+Node: responserequest306517
+Ref: #responserequest306701
+Node: responsesecurityDetails306806
+Ref: #responsesecuritydetails307001
+Node: responsestatus307177
+Ref: #responsestatus307357
+Node: responsestatusText307543
+Ref: #responsestatustext307720
+Node: responsetext307921
+Ref: #responsetext308083
+Node: responseurl308376
+Ref: #responseurl308509
+Node: class SecurityDetails308661
+Ref: #class-securitydetails308848
+Node: securityDetailsissuer309140
+Ref: #securitydetailsissuer309319
+Node: securityDetailsprotocol309494
+Ref: #securitydetailsprotocol309712
+Node: securityDetailssubjectName309889
+Ref: #securitydetailssubjectname310116
+Node: securityDetailsvalidFrom310298
+Ref: #securitydetailsvalidfrom310520
+Node: securityDetailsvalidTo310748
+Ref: #securitydetailsvalidto310931
+Node: class Target311157
+Ref: #class-target311328
+Node: targetbrowser311469
+Ref: #targetbrowser311612
+Node: targetbrowserContext311702
+Ref: #targetbrowsercontext311890
+Node: targetcreateCDPSession311998
+Ref: #targetcreatecdpsession312189
+Node: targetopener312423
+Ref: #targetopener312584
+Node: targetpage312712
+Ref: #targetpage312857
+Node: targettype313103
+Ref: #targettype313245
+Node: targeturl313554
+Ref: #targeturl313675
+Node: class CDPSession313792
+Ref: #class-cdpsession313964
+Node: cdpSessiondetach315007
+Ref: #cdpsessiondetach315172
+Node: cdpSessionsendmethod[ params]315437
+Ref: #cdpsessionsendmethod-params315630
+Node: class Coverage316158
+Ref: #class-coverage316332
+Node: coveragestartCSSCoverage[options]317498
+Ref: #coveragestartcsscoverageoptions317715
+Node: coveragestartJSCoverage[options]318297
+Ref: #coveragestartjscoverageoptions318544
+Node: coveragestopCSSCoverage319720
+Ref: #coveragestopcsscoverage319938
+Node: coveragestopJSCoverage321467
+Ref: #coveragestopjscoverage321642
+Node: class TimeoutError323192
+Ref: #class-timeouterror323349
+Node: Function Index323661
+Node: Event Index350430
+
+End Tag Table
+
+
+Local Variables:
+coding: utf-8
+End:
